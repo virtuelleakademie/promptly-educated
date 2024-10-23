@@ -1,5 +1,5 @@
 # Becoming prompt literate
  
-Large Language Models in University Teaching
+Using large language models in university teaching
 
-Site is published at 👉🏼 [virtuelleakademie.github.io/promptly-literate](https://virtuelleakademie.github.io/promptly-literate/)
+Site is published at 👉🏼 [virtuelleakademie.github.io/promptly-educated](https://virtuelleakademie.github.io/promptly-educated/)
