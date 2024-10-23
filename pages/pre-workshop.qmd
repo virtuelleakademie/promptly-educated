@@ -3,13 +3,19 @@ title: "Pre-Workshop Instructions"
 format: html
 ---
 
-# Chatbot accounts
+In this workshop, I recommend working with the following chatbots: 
 
-## Claude
-
-## ChatGPT
-
-## HuggingChat
-
+| Chatbot | Description | Features |
+|---------|--------------|----------|
+| [Claude](https://claude.ai/) | Considered by many to be using the best LLMs for a variety of tasks, such as coding and general-purpose writing. | Artifacts (output in a single document), displays HTML |
+| [ChatGPT](https://chatgpt.com) | The most popular chatbot, generally good for coding and writing. Its latest models are claimed to perform very well on reasoning tasks. | Web access, GPTs, Python code execution, Canvas|
+| [HuggingChat](https://huggingface.co/chat/) | A chatbot that allows you to use a variety of different open-source LLMs, such as those based on Llama. It's free, but you need to create an account. | Web search, Assistants |
 
 # Preparation
+You will need to create an account on each of these platforms. For Claude and ChatGPT, you will have to use your mobile number to verify your account.
+
+
+# Additional Resources
+- [Official Claude Documentation](https://www.anthropic.com/claude)
+- [ChatGPT Documentation](https://platform.openai.com/docs/guides/chat)
+- [HuggingFace Documentation](https://huggingface.co/docs/hub/index)
