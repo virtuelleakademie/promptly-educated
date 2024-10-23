@@ -23,6 +23,187 @@ format:
         callout-icon: true
 ---
 
+
+# Workshop Overview
+
+The workshop is divided into several blocks, each focusing on different aspects of LLM usage and prompt engineering. Here's a brief overview of the structure:
+
+:::{.timing}
+## Session Overview
+- Opening Block (15 min)
+- Foundations Block (45 min)
+- Break (15 min)
+- Intermediate Block (45 min)
+- Implementation Block (45 min)
+- Closing (15 min)
+:::
+
+
+
+
+# Opening Block (15 min)
+
+:::{.setup title="Technical Setup"}
+### Initial Setup (5 min)
+- Login to LLM platform
+- Test access
+- Quick troubleshooting
+:::
+
+## Opening Activity: LLM Prediction Challenge
+
+:::{.screens-down title="Group Discussion"}
+### LLM Prediction Challenge (10 min)
+1. Display 3 surprising LLM outputs
+2. Group discussion: What prompts created these?
+3. Collect hypotheses
+4. Reveal actual prompts
+:::
+
+
+
+## Understanding Large Language Models (LLMs)
+
+{{< revealjs file="../slides/understanding-llms.html" height="500px" class="ratio ratio-16x9" >}}
+
+
+# Foundation Block (45 min)
+
+## Prompt Engineering Basics
+
+{{< revealjs file="../slides/prompt-engineering-basics.html" height="500px" class="ratio ratio-16x9" >}}
+
+
+
+## Progressive Revelation Activity
+
+:::{.individual title="Hands-On Practice"}
+## Progressive Revelation Activity (15 min)
+
+Step-by-step prompt building:
+
+1. Start with basic prompt
+2. Add role specification
+3. Add context details
+4. Add output formatting
+5. Compare results at each stage
+   
+:::
+
+## Prompt Detective Exercise
+
+:::{.group}
+## Prompt Detective Exercise (15 min)
+
+1. Groups receive successful outputs
+2. Try to reconstruct prompts
+3. Test their versions
+4. Compare with original
+5. Discuss differences
+:::
+
+
+# Break (15 min)
+
+:::{.break title="Break Time"}
+## Break (15 min)
+- Movement encouraged
+- Optional experiments displayed
+- Technical support available
+:::
+
+
+
+# Intermediate Block (45 min)
+
+## Intermediate Techniques
+
+{{< revealjs file="../slides/prompt-engineering-intermediate.html" height="500px" class="ratio ratio-16x9" >}}
+
+
+## Error-First Learning Activity
+
+:::{.try title="Learning from Mistakes"}
+
+### Error-First Learning Activity (20 min)
+
+1. Present common error scenarios:
+   - Vague instructions
+   - Missing context
+   - Poor formatting
+2. Groups attempt fixes
+3. Test solutions
+4. Document improvements
+:::
+
+## Prompt Surgery Workshop
+
+:::{.group title="Collaborative Analysis"}
+### Prompt Surgery Workshop (25 min)
+1. Examine problematic prompts
+2. Diagnose issues
+3. Apply fixes
+4. Test and refine
+5. Share successful strategies
+:::
+
+
+# Implementation Block (45 min)
+
+## Anki Flashcard Project
+
+:::{.individual title="Project Work"}
+### Anki Flashcard Project - Phase 1 (15 min)
+- Select teaching material
+- Apply learned techniques
+- Create initial flashcard prompt
+- Test and document results
+:::
+
+:::{.group title="Peer Review"}
+### Group Refinement - Phase 2 (15 min)
+- Form groups of 3-4
+- Share and test prompts
+- Peer review using checklist
+- Refine based on feedback
+:::
+
+:::{.export title="Technical Implementation"}
+### Export Phase - Phase 3 (15 min)
+- Format for Anki import
+- Test import process
+- Troubleshoot issues
+- Document best practices
+:::
+
+
+# Closing Block (15 min)
+
+## Teaching Scenario Planning
+
+:::{.reflect title="Planning Ahead"}
+### Teaching Scenario Planning (10 min)
+1. Choose specific teaching task
+2. Design implementation plan
+3. Note potential challenges
+4. Identify success metrics
+:::
+
+## Final Wrap-Up
+
+:::{.checkpoint title="Wrap-Up"}
+### Final Review (5 min)
+- Key takeaways
+- Success strategies
+- Next steps
+- Resource sharing
+:::
+
+
+
+<!-- -REST OF DOCUMENT -------------------------------------------------------------------------- -->
+
+
 Designing effective prompts to instruct LLMs to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
 
 :::{.callout-tip}
@@ -44,7 +225,6 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 ``` -->
 
 
-{{< revealjs file="../slides/understanding-llms.html" height="500px" class="ratio ratio-16x9" >}}
 
 
 
