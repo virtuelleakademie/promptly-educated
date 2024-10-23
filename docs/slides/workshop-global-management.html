@@ -9,13 +9,16 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/grid-htext-1.0.0/grid_htext.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Andrew Ellis">
-  <title>Promptly Literate // - Workshop: Global Management</title>
+  <title>Promptly Educated // – Workshop: Global Management</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -358,9 +361,9 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Promptly Literate // - Workshop: Global Management">
-<meta property="og:site_name" content="Promptly Literate //">
-<meta name="twitter:title" content="Promptly Literate // - Workshop: Global Management">
+<meta property="og:title" content="Workshop: Global Management – Promptly Educated //">
+<meta property="og:site_name" content="Promptly Educated //">
+<meta name="twitter:title" content="Workshop: Global Management – Promptly Educated //">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -425,8 +428,7 @@ Andrew Ellis
 <p><img data-src="../assets/images/what-is-AI.svg" style="width:100.0%"></p>
 </div><div class="column" style="width:50%;">
 <p>A branch of computer science that aims to create machines that can perform tasks that typically require human intelligence.</p>
-</div>
-</div>
+</div></div>
 <!-- ## What is Generative AI?
 
 Generative AI uses machine learning to create complex statistical models of how data are generated.
@@ -441,8 +443,7 @@ Generative AI uses machine learning to create complex statistical models of how 
 <p><img data-src="../assets/images/LLM.svg" style="width:100.0%"></p>
 </div><div class="column" style="width:50%;">
 <p>An LLM is a type of generative AI model that is trained to predict the next word following the input (prompt).</p>
-</div>
-</div>
+</div></div>
 <!-- 
 ## Training
 :::: {.columns}
@@ -499,8 +500,7 @@ Generative AI uses machine learning to create complex statistical models of how 
 </div><div class="column" style="width:50%;">
 <p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Generated text depends on the <strong>generative model</strong> and the <strong>context</strong>.</p>
 <p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Every word (token) is given an equal amount time (computation per token is constant).</p>
-</div>
-</div>
+</div></div>
 <!-- 
 ## Example
 Let's start with the initial phrase "The quick brown".
@@ -532,11 +532,24 @@ This process continues until a stopping condition is met, such as reaching an en
 LLMs operate with tokens, not words. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly $\frac{3}{4}$ of a word (so 100 tokens is about 75 words).
 
 
+
+
+
+
 ::: {.cell}
+
+```{.r .cell-code}
+knitr::include_graphics("../assets/images/tokenization.png")
+```
+
 ::: {.cell-output-display}
 ![](../assets/images/tokenization.png)
 :::
 :::
+
+
+
+
 
 
 Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenizer). 
@@ -549,11 +562,24 @@ Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenize
 ::: {.column width="50%"}
 
 
+
+
+
+
 ::: {.cell}
+
+```{.r .cell-code}
+knitr::include_graphics("../assets/images/embedding.png")
+```
+
 ::: {.cell-output-display}
 ![](../assets/images/embedding.png)
 :::
 :::
+
+
+
+
 
 :::
 ::: {.column width="50%"}
@@ -643,8 +669,7 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 <li>Fine-tuning narrows down the space of all possible output to only desirable, human-like dialogue.</li>
 <li>Model is <strong>aligned</strong> with the values of the fine-tuner.</li>
 </ul>
-</div>
-</div>
+</div></div>
 <!-- ## Instruction fine-tuning
 
 ![](../assets/images/finetuning.png){width=100%} -->
@@ -670,8 +695,7 @@ Model is **aligned** with the values of the fine-tuner.
 <p><img data-src="../assets/images/chatbot.svg" style="width:100.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="../assets/images/chatbot-2.svg" style="width:100.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="an-assistant-model-is-a-conversation-simulator" class="slide level2">
 <h2>An assistant model is a conversation simulator</h2>
@@ -686,8 +710,7 @@ Model is **aligned** with the values of the fine-tuner.
 <li>Does not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.</li>
 <li>Has no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way.</li>
 </ul>
-</div>
-</div>
+</div></div>
 <!-- ## Stochastic generation
 
 ![](../assets/images/simulator.png){width=100%} -->
@@ -720,8 +743,7 @@ Model is **aligned** with the values of the fine-tuner.
 <li>Weird vocabulary, e.g.&nbsp;delve</li>
 <li>(Chatbots have privacy issues)</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="hallucination" class="slide level2">
 <h2>Hallucination</h2>
@@ -733,8 +755,7 @@ Model is **aligned** with the values of the fine-tuner.
 <li>LLMs can generate text that is not true, or not based on any real-world knowledge.</li>
 <li>This is known as “hallucination”. A better term would be “confabulation”.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="can-an-llm-tell-the-truth" class="slide level2">
 <h2>Can an LLM tell the truth?</h2>
@@ -768,8 +789,7 @@ Model is **aligned** with the values of the fine-tuner.
 </ul>
 </div><div class="column" style="width:34%;">
 <p><img data-src="../assets/images/KnowledgeBase.png" style="width:100.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="biases" class="slide level2 smaller">
 <h2>Biases</h2>
@@ -907,8 +927,7 @@ Model learns and fits.</p>
 <li>The answer is very similar to what you would tell a human dialogue partner/assistant.</li>
 <li>You can increase the probability of getting the desired output by providing context and examples.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="basics-of-prompting" class="slide level2">
 <h2>Basics of prompting</h2>
@@ -946,8 +965,7 @@ Model learns and fits.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="adopt-a-persona-role" class="slide level2">
 <h2>Adopt a persona (role)</h2>
@@ -1134,8 +1152,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 <li>Robust security, data privacy, and administrative controls</li>
 <li>Conversations and data are not used to train OpenAI models</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="gpts" class="slide level2">
 <h2>GPTs</h2>
@@ -1167,8 +1184,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="../assets/images/artefacts.png" style="width:100.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="deskilling-vs.-upskilling" class="slide level2">
 <h2>Deskilling vs.&nbsp;upskilling</h2>
@@ -1177,8 +1193,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 
 </div><div class="column" style="width:80%;">
 <p><img data-src="../assets/images/deskilling.svg" style="width:80.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="writing-tasks-in-the-ai-era" class="slide level2">
 <h2>Writing tasks in the AI era</h2>
@@ -1251,8 +1266,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 </ul>
 </div><div class="column" style="width:20%;">
 <p><img data-src="../assets/images/lzr-racer.png" style="width:100.0%"></p>
-</div>
-</div>
+</div></div>
 <table class="caption-top">
 <colgroup>
 <col style="width: 8%">
@@ -1461,8 +1475,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 <p><img data-src="../assets/images/cite-1.png" style="width:100.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="../assets/images/cite-2.png" style="width:100.0%"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="documentating-ai-use" class="slide level2">
 <h2>Documentating AI use</h2>
@@ -1524,6 +1537,20 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="../index.html">back to website <i class="bi-box-arrow-up-left " style="" role="img" aria-hidden="true"></i> </a></p>
+</div>
+</div>
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="../assets/bfh-logo.png">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p>Berner Fachhochschule | Bern University of Applied Sciences</p>
+</div>
+<div class="sb-title">
+<p> </p>
 </div>
 </div>
 </section>
@@ -1742,44 +1769,6 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -1812,18 +1801,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1855,15 +1833,37 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/promptly-literate");
+          var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/promptly-educated");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
