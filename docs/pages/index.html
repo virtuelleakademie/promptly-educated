@@ -82,26 +82,202 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-thumbs-up.callout {
-  border-left-color: steelblue;
+div.callout-export.callout {
+  border-left-color: brown;
 }
-div.callout-thumbs-up.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
+div.callout-export.callout-style-default > .callout-header {
+  background-color: rgb(from brown r g b / 13%);
 }
-div.callout-thumbs-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-thumbs-up.callout-style-default .callout-icon::before, div.callout-thumbs-up.callout-titled .callout-icon::before {
-  content: '👍🏼';
+div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
+  content: '📤';
   background-image: none;
 }
-div.callout-todo.callout {
-  border-left-color: pink;
+div.callout-reflect.callout {
+  border-left-color: purple;
 }
-div.callout-todo.callout-style-default > .callout-header {
-  background-color: rgb(from pink r g b / 13%);
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
 }
-div.callout-todo .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-todo.callout-style-default .callout-icon::before, div.callout-todo.callout-titled .callout-icon::before {
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  content: '💭';
+  background-image: none;
+}
+div.callout-break.callout {
+  border-left-color: brown;
+}
+div.callout-break.callout-style-default > .callout-header {
+  background-color: rgb(from brown r g b / 13%);
+}
+div.callout-break .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-break.callout-style-default .callout-icon::before, div.callout-break.callout-titled .callout-icon::before {
+  content: '☕';
+  background-image: none;
+}
+div.callout-pair.callout {
+  border-left-color: forestgreen;
+}
+div.callout-pair.callout-style-default > .callout-header {
+  background-color: rgb(from forestgreen r g b / 13%);
+}
+div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
+  content: '👥';
+  background-image: none;
+}
+div.callout-screens-up.callout {
+  border-left-color: green;
+}
+div.callout-screens-up.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
+  content: '🔼';
+  background-image: none;
+}
+div.callout-try.callout {
+  border-left-color: blue;
+}
+div.callout-try.callout-style-default > .callout-header {
+  background-color: rgb(from blue r g b / 13%);
+}
+div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
+  content: '🔄';
+  background-image: none;
+}
+div.callout-prompt-template.callout {
+  border-left-color: indigo;
+}
+div.callout-prompt-template.callout-style-default > .callout-header {
+  background-color: rgb(from indigo r g b / 13%);
+}
+div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
+  content: '📋';
+  background-image: none;
+}
+div.callout-screens-down.callout {
+  border-left-color: orange;
+}
+div.callout-screens-down.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
+}
+div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
+  content: '🔽';
+  background-image: none;
+}
+div.callout-testing.callout {
+  border-left-color: green;
+}
+div.callout-testing.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-testing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-testing.callout-style-default .callout-icon::before, div.callout-testing.callout-titled .callout-icon::before {
+  content: '🧪';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: steelblue;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgb(from steelblue r g b / 13%);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  content: '💻';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: purple;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  content: '👥';
+  background-image: none;
+}
+div.callout-timing.callout {
+  border-left-color: red;
+}
+div.callout-timing.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
+  content: '⏱️';
+  background-image: none;
+}
+div.callout-tip.callout {
+  border-left-color: gold;
+}
+div.callout-tip.callout-style-default > .callout-header {
+  background-color: rgb(from gold r g b / 13%);
+}
+div.callout-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-tip.callout-style-default .callout-icon::before, div.callout-tip.callout-titled .callout-icon::before {
+  content: '💡';
+  background-image: none;
+}
+div.callout-feedback.callout {
+  border-left-color: teal;
+}
+div.callout-feedback.callout-style-default > .callout-header {
+  background-color: rgb(from teal r g b / 13%);
+}
+div.callout-feedback .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-feedback.callout-style-default .callout-icon::before, div.callout-feedback.callout-titled .callout-icon::before {
   content: '📝';
+  background-image: none;
+}
+div.callout-caution.callout {
+  border-left-color: orange;
+}
+div.callout-caution.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
+}
+div.callout-caution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-caution.callout-style-default .callout-icon::before, div.callout-caution.callout-titled .callout-icon::before {
+  content: '⚠️';
+  background-image: none;
+}
+div.callout-setup.callout {
+  border-left-color: gray;
+}
+div.callout-setup.callout-style-default > .callout-header {
+  background-color: rgb(from gray r g b / 13%);
+}
+div.callout-setup .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup.callout-titled .callout-icon::before {
+  content: '⚙️';
+  background-image: none;
+}
+div.callout-checkpoint.callout {
+  border-left-color: purple;
+}
+div.callout-checkpoint.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-checkpoint .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-checkpoint.callout-titled .callout-icon::before {
+  content: '🎯';
+  background-image: none;
+}
+div.callout-prompt-example.callout {
+  border-left-color: darkblue;
+}
+div.callout-prompt-example.callout-style-default > .callout-header {
+  background-color: rgb(from darkblue r g b / 13%);
+}
+div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
+  content: '🤖';
   background-image: none;
 }
 </style>
@@ -144,26 +320,39 @@ div.callout-todo.callout-style-default .callout-icon::before, div.callout-todo.c
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../pages/pre-workshop.html"> <i class="bi bi-backpack4" role="img">
+</i> 
+<span class="menu-text">Pre-workshop Setup</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../pages/index.html" aria-current="page"> <i class="bi bi-person-workspace" role="img">
 </i> 
 <span class="menu-text">Workshop</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-book" role="img">
+      <i class="bi bi-aspect-ratio" role="img">
 </i> 
  <span class="menu-text">Slides</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
         <li>
-    <a class="dropdown-item" href="../slides/presentation-1.html">
- <span class="dropdown-text">Presentation 1</span></a>
+    <a class="dropdown-item" href="../slides/understanding-llms.html">
+ <span class="dropdown-text">Understanding large language models</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/prompt-engineering-basics.html">
+ <span class="dropdown-text">Prompt engineering: basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/prompt-engineering-intermediate.html">
+ <span class="dropdown-text">Prompt engineering: intermediate</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-wrench-adjustable" role="img">
+      <i class="bi bi-tools" role="img">
 </i> 
  <span class="menu-text">Resources</span>
     </a>
@@ -210,7 +399,35 @@ div.callout-todo.callout-style-default .callout-icon::before, div.callout-todo.c
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prompting" id="toc-prompting" class="nav-link active" data-scroll-target="#prompting">Prompting</a>
+  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
+  <li><a href="#opening-block-15-min" id="toc-opening-block-15-min" class="nav-link" data-scroll-target="#opening-block-15-min">Opening Block (15 min)</a>
+  <ul class="collapse">
+  <li><a href="#opening-activity-llm-prediction-challenge" id="toc-opening-activity-llm-prediction-challenge" class="nav-link" data-scroll-target="#opening-activity-llm-prediction-challenge">Opening Activity: LLM Prediction Challenge</a></li>
+  <li><a href="#understanding-large-language-models-llms" id="toc-understanding-large-language-models-llms" class="nav-link" data-scroll-target="#understanding-large-language-models-llms">Understanding Large Language Models (LLMs)</a></li>
+  </ul></li>
+  <li><a href="#foundation-block-45-min" id="toc-foundation-block-45-min" class="nav-link" data-scroll-target="#foundation-block-45-min">Foundation Block (45 min)</a>
+  <ul class="collapse">
+  <li><a href="#prompt-engineering-basics" id="toc-prompt-engineering-basics" class="nav-link" data-scroll-target="#prompt-engineering-basics">Prompt Engineering Basics</a></li>
+  <li><a href="#progressive-revelation-activity" id="toc-progressive-revelation-activity" class="nav-link" data-scroll-target="#progressive-revelation-activity">Progressive Revelation Activity</a></li>
+  <li><a href="#prompt-detective-exercise" id="toc-prompt-detective-exercise" class="nav-link" data-scroll-target="#prompt-detective-exercise">Prompt Detective Exercise</a></li>
+  </ul></li>
+  <li><a href="#break-15-min" id="toc-break-15-min" class="nav-link" data-scroll-target="#break-15-min">Break (15 min)</a></li>
+  <li><a href="#intermediate-block-45-min" id="toc-intermediate-block-45-min" class="nav-link" data-scroll-target="#intermediate-block-45-min">Intermediate Block (45 min)</a>
+  <ul class="collapse">
+  <li><a href="#intermediate-techniques" id="toc-intermediate-techniques" class="nav-link" data-scroll-target="#intermediate-techniques">Intermediate Techniques</a></li>
+  <li><a href="#error-first-learning-activity" id="toc-error-first-learning-activity" class="nav-link" data-scroll-target="#error-first-learning-activity">Error-First Learning Activity</a></li>
+  <li><a href="#prompt-surgery-workshop" id="toc-prompt-surgery-workshop" class="nav-link" data-scroll-target="#prompt-surgery-workshop">Prompt Surgery Workshop</a></li>
+  </ul></li>
+  <li><a href="#implementation-block-45-min" id="toc-implementation-block-45-min" class="nav-link" data-scroll-target="#implementation-block-45-min">Implementation Block (45 min)</a>
+  <ul class="collapse">
+  <li><a href="#anki-flashcard-project" id="toc-anki-flashcard-project" class="nav-link" data-scroll-target="#anki-flashcard-project">Anki Flashcard Project</a></li>
+  </ul></li>
+  <li><a href="#closing-block-15-min" id="toc-closing-block-15-min" class="nav-link" data-scroll-target="#closing-block-15-min">Closing Block (15 min)</a>
+  <ul class="collapse">
+  <li><a href="#teaching-scenario-planning" id="toc-teaching-scenario-planning" class="nav-link" data-scroll-target="#teaching-scenario-planning">Teaching Scenario Planning</a></li>
+  <li><a href="#final-wrap-up" id="toc-final-wrap-up" class="nav-link" data-scroll-target="#final-wrap-up">Final Wrap-Up</a></li>
+  </ul></li>
+  <li><a href="#prompting" id="toc-prompting" class="nav-link" data-scroll-target="#prompting">Prompting</a>
   <ul class="collapse">
   <li><a href="#general-tips" id="toc-general-tips" class="nav-link" data-scroll-target="#general-tips">General tips</a>
   <ul class="collapse">
@@ -276,6 +493,337 @@ div.callout-todo.callout-style-default .callout-icon::before, div.callout-todo.c
 </header>
 
 
+<section id="workshop-overview" class="level1">
+<h1>Workshop Overview</h1>
+<p>The workshop is divided into several blocks, each focusing on different aspects of LLM usage and prompt engineering. Here’s a brief overview of the structure:</p>
+<div class="callout callout-style-default callout-timing callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Time Check
+</div>
+</div>
+<section id="session-overview" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="session-overview">Session Overview</h2>
+<ul>
+<li>Opening Block (15 min)</li>
+<li>Foundations Block (45 min)</li>
+<li>Break (15 min)</li>
+<li>Intermediate Block (45 min)</li>
+<li>Implementation Block (45 min)</li>
+<li>Closing (15 min)</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="opening-block-15-min" class="level1">
+<h1>Opening Block (15 min)</h1>
+<div class="callout callout-style-default callout-setup callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Technical Setup
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<section id="initial-setup-5-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="initial-setup-5-min">Initial Setup (5 min)</h3>
+<ul>
+<li>Login to LLM platform</li>
+<li>Test access</li>
+<li>Quick troubleshooting</li>
+</ul>
+</section>
+</div>
+</div>
+<section id="opening-activity-llm-prediction-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="opening-activity-llm-prediction-challenge">Opening Activity: LLM Prediction Challenge</h2>
+<div class="callout callout-style-default callout-screens-down callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Group Discussion
+</div>
+</div>
+<section id="llm-prediction-challenge-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="llm-prediction-challenge-10-min">LLM Prediction Challenge (10 min)</h3>
+<ol type="1">
+<li>Display 3 surprising LLM outputs</li>
+<li>Group discussion: What prompts created these?</li>
+<li>Collect hypotheses</li>
+<li>Reveal actual prompts</li>
+</ol>
+</section>
+</div>
+</section>
+<section id="understanding-large-language-models-llms" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-large-language-models-llms">Understanding Large Language Models (LLMs)</h2>
+    <p><a href="../slides/understanding-llms.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="../slides/understanding-llms.html" height="500px"></iframe>
+    </div>
+  
+</section>
+</section>
+<section id="foundation-block-45-min" class="level1">
+<h1>Foundation Block (45 min)</h1>
+<section id="prompt-engineering-basics" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-engineering-basics">Prompt Engineering Basics</h2>
+    <p><a href="../slides/prompt-engineering-basics.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="../slides/prompt-engineering-basics.html" height="500px"></iframe>
+    </div>
+  
+</section>
+<section id="progressive-revelation-activity" class="level2">
+<h2 class="anchored" data-anchor-id="progressive-revelation-activity">Progressive Revelation Activity</h2>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hands-On Practice
+</div>
+</div>
+<section id="progressive-revelation-activity-15-min" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="progressive-revelation-activity-15-min">Progressive Revelation Activity (15 min)</h2>
+<p>Step-by-step prompt building:</p>
+<ol type="1">
+<li>Start with basic prompt</li>
+<li>Add role specification</li>
+<li>Add context details</li>
+<li>Add output formatting</li>
+<li>Compare results at each stage</li>
+</ol>
+</section>
+</div>
+</section>
+<section id="prompt-detective-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-detective-exercise">Prompt Detective Exercise</h2>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Group Work
+</div>
+</div>
+<section id="prompt-detective-exercise-15-min" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="prompt-detective-exercise-15-min">Prompt Detective Exercise (15 min)</h2>
+<ol type="1">
+<li>Groups receive successful outputs</li>
+<li>Try to reconstruct prompts</li>
+<li>Test their versions</li>
+<li>Compare with original</li>
+<li>Discuss differences</li>
+</ol>
+</section>
+</div>
+</section>
+</section>
+<section id="break-15-min" class="level1">
+<h1>Break (15 min)</h1>
+<div class="callout callout-style-default callout-break callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Break Time
+</div>
+</div>
+<section id="break-15-min-1" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="break-15-min-1">Break (15 min)</h2>
+<ul>
+<li>Movement encouraged</li>
+<li>Optional experiments displayed</li>
+<li>Technical support available</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="intermediate-block-45-min" class="level1">
+<h1>Intermediate Block (45 min)</h1>
+<section id="intermediate-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="intermediate-techniques">Intermediate Techniques</h2>
+    <p><a href="../slides/prompt-engineering-intermediate.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="../slides/prompt-engineering-intermediate.html" height="500px"></iframe>
+    </div>
+  
+</section>
+<section id="error-first-learning-activity" class="level2">
+<h2 class="anchored" data-anchor-id="error-first-learning-activity">Error-First Learning Activity</h2>
+<div class="callout callout-style-default callout-try callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learning from Mistakes
+</div>
+</div>
+<section id="error-first-learning-activity-20-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="error-first-learning-activity-20-min">Error-First Learning Activity (20 min)</h3>
+<ol type="1">
+<li>Present common error scenarios:
+<ul>
+<li>Vague instructions</li>
+<li>Missing context</li>
+<li>Poor formatting</li>
+</ul></li>
+<li>Groups attempt fixes</li>
+<li>Test solutions</li>
+<li>Document improvements</li>
+</ol>
+</section>
+</div>
+</section>
+<section id="prompt-surgery-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-surgery-workshop">Prompt Surgery Workshop</h2>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Collaborative Analysis
+</div>
+</div>
+<section id="prompt-surgery-workshop-25-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="prompt-surgery-workshop-25-min">Prompt Surgery Workshop (25 min)</h3>
+<ol type="1">
+<li>Examine problematic prompts</li>
+<li>Diagnose issues</li>
+<li>Apply fixes</li>
+<li>Test and refine</li>
+<li>Share successful strategies</li>
+</ol>
+</section>
+</div>
+</section>
+</section>
+<section id="implementation-block-45-min" class="level1">
+<h1>Implementation Block (45 min)</h1>
+<section id="anki-flashcard-project" class="level2">
+<h2 class="anchored" data-anchor-id="anki-flashcard-project">Anki Flashcard Project</h2>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Project Work
+</div>
+</div>
+<section id="anki-flashcard-project---phase-1-15-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="anki-flashcard-project---phase-1-15-min">Anki Flashcard Project - Phase 1 (15 min)</h3>
+<ul>
+<li>Select teaching material</li>
+<li>Apply learned techniques</li>
+<li>Create initial flashcard prompt</li>
+<li>Test and document results</li>
+</ul>
+</section>
+</div>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Peer Review
+</div>
+</div>
+<section id="group-refinement---phase-2-15-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="group-refinement---phase-2-15-min">Group Refinement - Phase 2 (15 min)</h3>
+<ul>
+<li>Form groups of 3-4</li>
+<li>Share and test prompts</li>
+<li>Peer review using checklist</li>
+<li>Refine based on feedback</li>
+</ul>
+</section>
+</div>
+<div class="callout callout-style-default callout-export callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Technical Implementation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<section id="export-phase---phase-3-15-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="export-phase---phase-3-15-min">Export Phase - Phase 3 (15 min)</h3>
+<ul>
+<li>Format for Anki import</li>
+<li>Test import process</li>
+<li>Troubleshoot issues</li>
+<li>Document best practices</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+</section>
+<section id="closing-block-15-min" class="level1">
+<h1>Closing Block (15 min)</h1>
+<section id="teaching-scenario-planning" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-scenario-planning">Teaching Scenario Planning</h2>
+<div class="callout callout-style-default callout-reflect callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Planning Ahead
+</div>
+</div>
+<section id="teaching-scenario-planning-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="teaching-scenario-planning-10-min">Teaching Scenario Planning (10 min)</h3>
+<ol type="1">
+<li>Choose specific teaching task</li>
+<li>Design implementation plan</li>
+<li>Note potential challenges</li>
+<li>Identify success metrics</li>
+</ol>
+</section>
+</div>
+</section>
+<section id="final-wrap-up" class="level2">
+<h2 class="anchored" data-anchor-id="final-wrap-up">Final Wrap-Up</h2>
+<div class="callout callout-style-default callout-checkpoint callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wrap-Up
+</div>
+</div>
+<section id="final-review-5-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="final-review-5-min">Final Review (5 min)</h3>
+<ul>
+<li>Key takeaways</li>
+<li>Success strategies</li>
+<li>Next steps</li>
+<li>Resource sharing</li>
+</ul>
+</section>
+</div>
+<!-- -REST OF DOCUMENT -------------------------------------------------------------------------- -->
 <p>Designing effective prompts to instruct LLMs to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -294,45 +842,56 @@ Tip
 </ul>
 </div>
 </div>
+</section>
+</section>
 <section id="prompting" class="level1">
 <h1>Prompting</h1>
-    <p><a href="../slides/presentation-1.html" target="_blank">View slides in full screen</a></p>
-       <div class="ratio ratio-16x9">
-      <iframe class="slide-deck" src="../slides/presentation-1.html" height="500px"></iframe>
-    </div>
-  
-<div class="callout callout-style-default callout-todo callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<!-- [Full Screen](../slides/presentation-1.qmd)
+
+
+
+
+
+```{=html}
+<iframe class="slide-deck" src="../slides/presentation-1.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+``` -->
+<div class="callout callout-style-default callout-pair callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Todo
+Pair Work
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Remember to complete this section.</p>
 </div>
 </div>
 </div>
-<div class="test" data-collapse="true">
-<p>This information is crucial for understanding the concept.</p>
+<div class="thumbs-up" title="That was a hard task!">
+<p>You did a great job completing this task.</p>
 </div>
-<div class="callout callout-style-default callout-thumbs-up callout-titled">
+<div class="callout callout-style-default callout-checkpoint callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-That was a hard task!
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You did a great job completing this task.</p>
+<p>haha</p>
 </div>
 </div>
+    <p><a href="../slides/prompt-engineering-basics.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="../slides/prompt-engineering-basics.html" height="500px"></iframe>
+    </div>
+  
 <section id="general-tips" class="level2">
 <h2 class="anchored" data-anchor-id="general-tips">General tips</h2>
 <p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models. If you need examples, this might be a good place to start.</p>
@@ -562,7 +1121,7 @@ Important
 <li><strong>Explore these prompt guides</strong>. Use ChatGPT to try out new ideas.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -571,7 +1130,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></p>
 <iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
@@ -579,7 +1138,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -588,7 +1147,7 @@ Prompting guide: A more technical guide to prompting
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a>: <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p>
 <iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>

@@ -78,6 +78,30 @@ ul.task-list li input[type="checkbox"] {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<style>
+div.callout-thumbs-up.callout {
+  border-left-color: steelblue;
+}
+div.callout-thumbs-up.callout-style-default > .callout-header {
+  background-color: rgb(from steelblue r g b / 13%);
+}
+div.callout-thumbs-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-thumbs-up.callout-style-default .callout-icon::before, div.callout-thumbs-up.callout-titled .callout-icon::before {
+  content: '👍🏼';
+  background-image: none;
+}
+div.callout-todo.callout {
+  border-left-color: pink;
+}
+div.callout-todo.callout-style-default > .callout-header {
+  background-color: rgb(from pink r g b / 13%);
+}
+div.callout-todo .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-todo.callout-style-default .callout-icon::before, div.callout-todo.callout-titled .callout-icon::before {
+  content: '📝';
+  background-image: none;
+}
+</style>
 
 
 <meta property="og:title" content="– Promptly Educated //">
@@ -107,39 +131,39 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pages/agenda.qmd"> <i class="bi bi-calendar-event" role="img">
+    <a class="nav-link" href="../pages/pre-workshop.html"> <i class="bi bi-backpack4" role="img">
 </i> 
-<span class="menu-text">Agenda</span></a>
+<span class="menu-text">Pre-workshop Instructions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/index.html"> <i class="bi bi-person-workspace" role="img">
+</i> 
+<span class="menu-text">Workshop</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-file-slides" role="img">
+      <i class="bi bi-aspect-ratio" role="img">
 </i> 
  <span class="menu-text">Slides</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
         <li>
-    <a class="dropdown-item" href="../slides/workshop-global-management.html">
- <span class="dropdown-text">Workshop: Global Management</span></a>
+    <a class="dropdown-item" href="../slides/understanding-llms.html">
+ <span class="dropdown-text">Understanding large language models</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-brush" role="img">
-</i> 
- <span class="menu-text">Activities</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
         <li>
-    <a class="dropdown-item" href="../pages/activity-global-management.html">
- <span class="dropdown-text">Activity: Workshop Global Management</span></a>
+    <a class="dropdown-item" href="../slides/prompt-engineering-basics.html">
+ <span class="dropdown-text">Prompt engineering: basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/prompt-engineering-intermediate.qmd">
+ <span class="dropdown-text">Prompt engineering: intermediate</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-wrench-adjustable" role="img">
+      <i class="bi bi-tools" role="img">
 </i> 
  <span class="menu-text">Resources</span>
     </a>
