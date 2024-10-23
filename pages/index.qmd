@@ -41,11 +41,11 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 {{< revealjs file="../slides/presentation-1.html" height="500px" class="ratio ratio-16x9" >}}
 
 
-::: todo
+::: {.todo collapse="true"}
 Remember to complete this section.
 :::
 
-::: test
+::: {.test collapse="true"}
 This information is crucial for understanding the concept.
 :::
 

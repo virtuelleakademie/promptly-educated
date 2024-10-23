@@ -179,7 +179,9 @@ filters:
 custom-callout:
   todo:
     icon-symbol: "📝"
+    collapse: true
     color: "pink"
+
   thumbs-up:
     title: "Great job!"
     icon-symbol: "👍🏼"
