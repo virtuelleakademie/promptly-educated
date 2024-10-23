@@ -35,7 +35,7 @@ website:
     background: light
     left:
       - icon: backpack4
-        text: "Pre-workshop Instructions"
+        text: "Pre-workshop Setup"
         file: pages/pre-workshop.qmd
       - icon: person-workspace
         text: "Workshop"
@@ -44,15 +44,12 @@ website:
       - icon: aspect-ratio ##book #file-slides
         text: "Slides" # {{< fa person-chalkboard >}}
         menu:
-          - text: "Presentation 1"
-            file: slides/presentation-1.qmd
-
-      # - icon: brush #pencil-square
-      #   text: "Activities"
-      #   menu:
-      #     # - text: "Activities"
-      #     #   file: pages/activities.qmd
-
+          - text: "Understanding large language models"
+            file: slides/understanding-llms.qmd
+          - text: "Prompt engineering: basics"
+            file: slides/prompt-engineering-basics.qmd
+          - text: "Prompt engineering: intermediate"
+            file: slides/prompt-engineering-intermediate.qmd
 
       - icon: tools #wrench-adjustable
         text: "Resources"
@@ -111,12 +108,124 @@ filters:
 - custom-callout
 
 custom-callout:
-  todo:
-    icon-symbol: "📝"
-    collapse: true
-    color: "pink"
+  # todo:
+  #   icon-symbol: "📝"
+  #   collapse: true
+  #   color: "pink"
 
-  thumbs-up:
-    title: "Great job!"
-    icon-symbol: "👍🏼"
+  # thumbs-up:
+  #   title: "Great job!"
+  #   icon-symbol: "👍🏼"
+  #   color: "steelblue"
+
+  # Activity Types
+  individual:
+    title: "Individual Work"
+    icon-symbol: "💻"
     color: "steelblue"
+    collapse: false
+
+  pair:
+    title: "Pair Work"
+    icon-symbol: "👥"
+    color: "forestgreen"
+    collapse: false
+
+  group:
+    title: "Group Work"
+    icon-symbol: "👥👥"
+    color: "purple"
+    collapse: false
+
+  screens-down:
+    title: "Screens Down"
+    icon-symbol: "🔽"
+    color: "orange"
+    collapse: false
+
+  screens-up:
+    title: "Screens Up"
+    icon-symbol: "🔼"
+    color: "green"
+    collapse: false
+
+  # Learning Process
+  try:
+    title: "Try It"
+    icon-symbol: "🔄"
+    color: "blue"
+    collapse: false
+
+  reflect:
+    title: "Reflection"
+    icon-symbol: "💭"
+    color: "purple"
+    collapse: false
+
+  feedback:
+    title: "Feedback"
+    icon-symbol: "📝"
+    color: "teal"
+    collapse: true
+
+  caution:
+    title: "Watch Out"
+    icon-symbol: "⚠️"
+    color: "orange"
+    collapse: true
+
+  tip:
+    title: "Pro Tip"
+    icon-symbol: "💡"
+    color: "gold"
+    collapse: true
+
+  # Technical Elements
+  prompt-example:
+    title: "Example Prompt"
+    icon-symbol: "🤖"
+    color: "darkblue"
+    collapse: true
+
+  prompt-template:
+    title: "Prompt Template"
+    icon-symbol: "📋"
+    color: "indigo"
+    collapse: true
+
+  testing:
+    title: "Test Your Prompt"
+    icon-symbol: "🧪"
+    color: "green"
+    collapse: false
+
+  export:
+    title: "Export"
+    icon-symbol: "📤"
+    color: "brown"
+    collapse: true
+
+  # Workshop Flow
+  setup:
+    title: "Setup"
+    icon-symbol: "⚙️"
+    color: "gray"
+    collapse: true
+
+  timing:
+    title: "Time Check"
+    icon-symbol: "⏱️"
+    color: "red"
+    collapse: false
+
+  break:
+    title: "Break Time"
+    icon-symbol: "☕"
+    color: "brown"
+    collapse: false
+
+  checkpoint:
+    title: "Checkpoint"
+    icon-symbol: "🎯"
+    color: "purple"
+    collapse: false

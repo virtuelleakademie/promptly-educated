@@ -44,23 +44,27 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 ``` -->
 
 
-{{< revealjs file="../slides/presentation-1.html" height="500px" class="ratio ratio-16x9" >}}
+{{< revealjs file="../slides/understanding-llms.html" height="500px" class="ratio ratio-16x9" >}}
 
 
 
-::: {.todo collapse="true"}
+:::{.pair collapse="true"}
 Remember to complete this section.
 :::
 
-::: {.test collapse="true"}
-This information is crucial for understanding the concept.
-:::
+
 
 ::: {.thumbs-up title="That was a hard task!"}
 You did a great job completing this task.
 :::
 
-{{< revealjs file="../slides/presentation-2.html" height="500px" class="ratio ratio-16x9" >}}
+:::{.checkpoint}
+
+haha
+:::
+
+{{< revealjs file="../slides/prompt-engineering-basics.html" height="500px" class="ratio ratio-16x9" >}}
+
 
 
 ## General tips
