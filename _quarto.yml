@@ -55,13 +55,13 @@ website:
           #   file: slides/busy-lecturers-guide.qmd
 
 
-      - icon: brush #pencil-square
-        text: "Activities"
-        menu:
-          # - text: "Activities"
-          #   file: pages/activities.qmd
-          - text: "Activity: Workshop Global Management"
-            file: pages/activity-global-management.qmd
+      # - icon: brush #pencil-square
+      #   text: "Activities"
+      #   menu:
+      #     # - text: "Activities"
+      #     #   file: pages/activities.qmd
+      #     - text: "Activity: Workshop Global Management"
+      #       file: pages/activity-global-management.qmd
           # - text: "Activity: Confabulations and prompting"
           #   file: pages/activities-20240223.qmd
           # - text: "Activity: CAS"

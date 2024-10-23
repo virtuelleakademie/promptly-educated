@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Andrew Ellis">
+<meta name="description" content="Basic prompting techniques.">
 
-<title>Virtuelle Akademie – Promptly Educated //</title>
+<title>Hands-On Practice: Prompting – Promptly Educated //</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -80,9 +83,13 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta property="og:title" content="Virtuelle Akademie – Promptly Educated //">
+<meta property="og:title" content="Hands-On Practice: Prompting – Promptly Educated //">
+<meta property="og:description" content="Basic prompting techniques.">
+<meta property="og:image" content="https://virtuelleakademie.github.io/promptly-educated/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="Promptly Educated //">
-<meta name="twitter:title" content="Virtuelle Akademie – Promptly Educated //">
+<meta name="twitter:title" content="Hands-On Practice: Prompting – Promptly Educated //">
+<meta name="twitter:description" content="Basic prompting techniques.">
+<meta name="twitter:image" content="https://virtuelleakademie.github.io/promptly-educated/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -114,19 +121,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../slides/workshop-global-management.html">
  <span class="dropdown-text">Workshop: Global Management</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-brush" role="img">
-</i> 
- <span class="menu-text">Activities</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
-        <li>
-    <a class="dropdown-item" href="../pages/activity-global-management.html">
- <span class="dropdown-text">Activity: Workshop Global Management</span></a>
   </li>  
     </ul>
   </li>
@@ -177,96 +171,372 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#ki-kurse-der-virtuellen-akademie" id="toc-ki-kurse-der-virtuellen-akademie" class="nav-link active" data-scroll-target="#ki-kurse-der-virtuellen-akademie">KI-Kurse der Virtuellen Akademie</a></li>
+  <li><a href="#prompting" id="toc-prompting" class="nav-link active" data-scroll-target="#prompting">Prompting</a>
+  <ul class="collapse">
+  <li><a href="#general-tips" id="toc-general-tips" class="nav-link" data-scroll-target="#general-tips">General tips</a>
+  <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  </ul></li>
+  <li><a href="#structured-prompting-techniques" id="toc-structured-prompting-techniques" class="nav-link" data-scroll-target="#structured-prompting-techniques">Structured prompting techniques</a>
+  <ul class="collapse">
+  <li><a href="#in-context-learning-provide-examples-within-the-prompt" id="toc-in-context-learning-provide-examples-within-the-prompt" class="nav-link" data-scroll-target="#in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</a></li>
+  <li><a href="#thought-generation-instruct-the-model-to-think-step-by-step" id="toc-thought-generation-instruct-the-model-to-think-step-by-step" class="nav-link" data-scroll-target="#thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</a></li>
+  <li><a href="#decomposition-techniques-break-down-tasks-into-subtasks" id="toc-decomposition-techniques-break-down-tasks-into-subtasks" class="nav-link" data-scroll-target="#decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#exercise-essay-writing" id="toc-exercise-essay-writing" class="nav-link" data-scroll-target="#exercise-essay-writing">Exercise: Essay writing</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Virtuelle Akademie</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://virtuelleakademie.ch/" class="about-link" rel="" target="">
-    <i class="bi bi-magic"></i>
-     <span class="about-link-text">Virtuelle Akademie</span>
-  </a>
-  <a href="https://virtuelleakademie.ch/knowledge-base/" class="about-link" rel="" target="">
-    <i class="bi bi-lightbulb-fill"></i>
-     <span class="about-link-text">Knowledge Base</span>
-  </a>
-  <a href="https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/" class="about-link" rel="" target="">
-    <i class="bi bi-mortarboard-fill"></i>
-     <span class="about-link-text">Weiterbildungsangebote</span>
-  </a>
-  <a href="mailto:andrew.ellis@bfh.ch" class="about-link" rel="" target="">
-    <i class="bi bi-inbox-fill"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<section id="ki-kurse-der-virtuellen-akademie" class="level2">
-<h2 data-anchor-id="ki-kurse-der-virtuellen-akademie">KI-Kurse der Virtuellen Akademie</h2>
-<div class="callout callout-style-simple callout-note callout-titled">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Hands-On Practice: Prompting</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Basic prompting techniques.</p>
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://github.com/awellis">Andrew Ellis</a> <a href="https://orcid.org/0000-0002-2788-936X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://virtuelleakademie.ch">
+            Virtuelle Akademie, Berner Fachhochschule
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">27 Jun, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Designing effective prompts to instruct LLMs to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li><p>In general, it is advisable to improve your prompting strategy by <strong>iterating</strong>.</p></li>
+<li><p>Start with a simple prompt, see what the model generates, and then refine. Repeat this process until you are satisfied with the results.</p></li>
+<li><p>Once you have a good prompt, you can use it in a new chat session - in this way, the “failed” attempts will not be part of the context.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<section id="prompting" class="level1">
+<h1>Prompting</h1>
+<section id="general-tips" class="level2">
+<h2 class="anchored" data-anchor-id="general-tips">General tips</h2>
+<p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models. If you need examples, this might be a good place to start.</p>
+<p>The strategies include:</p>
+<ul>
+<li>writing clear instructions</li>
+<li>providing reference texts</li>
+<li>splitting tasks into subtasks</li>
+<li>giving GPT ‘time to think’</li>
+<li>using external tools</li>
+</ul>
+<p>Some general techniques are:</p>
+<ul>
+<li><p><strong>Numbered Steps:</strong>: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.</p></li>
+<li><p><strong>Use delimiters:</strong> To separate various parts of the prompt (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</p></li>
+<li><p><strong>Few-shot prompting:</strong> Provide a few examples for guidance.</p></li>
+</ul>
+<p>Combining these techniques, a template prompt might look like this:</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Prompt-Labor: Basics zu KI-Sprachmodellen
+Template
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Möchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.</p>
-<p>Inhalt:</p>
-<ul>
-<li><p>Was sind KI-Sprachmodelle? Wie werden sie trainiert?</p></li>
-<li><p>Wie generieren KI-Sprachmodelle Text?</p></li>
-<li><p>Wie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?</p></li>
-</ul>
-<p>Nächste Termine:</p>
-<p><del>23.02.2024, 14–16h</del></p>
-<p><del>22.04.2024, 10–12h</del></p>
-<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/">www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/</a></p>
+<ol type="1">
+<li>Role: who is being simulated?</li>
+<li>Task: what is to be done?</li>
+<li>Steps: what are the steps to complete the task?</li>
+<li>Context: what is the context of the task?</li>
+<li>Goal: what is the goal of the task?</li>
+<li>Format: what is the format of the output? How long should it be?</li>
+</ol>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note callout-titled">
+<p>Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.</p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Prompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Möchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.</p>
-<p>Inhalt:</p>
+<p>You are an expert on the topic of university education and didactics. Explain the concept of “flipped classroom” to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.</p>
+</div>
+</div>
+<p>Different persona:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are 13 year old high school student. Explain the concept of “flipped classroom” to your friends. Use markdown to format your response. Keep you explanation concise and to the point.</p>
+</div>
+</div>
+<p>Ask the model to output a table:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="structured-prompting-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="structured-prompting-techniques">Structured prompting techniques</h2>
+<section id="in-context-learning-provide-examples-within-the-prompt" class="level3">
+<h3 class="anchored" data-anchor-id="in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</h3>
+<section id="explanation" class="level4">
+<h4 class="anchored" data-anchor-id="explanation">Explanation</h4>
+<p>In-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model’s responses by demonstrating the desired output format or type of information.</p>
+</section>
+<section id="techniques" class="level4">
+<h4 class="anchored" data-anchor-id="techniques">Techniques</h4>
 <ul>
-<li>Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?</li>
+<li><p><strong>Few-Shot Prompting</strong>: Provide a few examples of the desired output before asking for a new response.</p></li>
+<li><p><strong>Zero-Shot Prompting</strong>: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.</p></li>
 </ul>
-<p>Nächste Termine:</p>
-<p><del>13.03.2024, 10–12h</del></p>
-<p><del>01.05.2024, 10–12h</del></p>
-<p>17.05.2024, 13.30–15.30</p>
-<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/">www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/</a></p>
+</section>
+<section id="example-1" class="level4">
+<h4 class="anchored" data-anchor-id="example-1">Example</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Few-Shot Prompting:
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Summarize the main findings of these research paper abstracts:</p>
+<ol type="1">
+<li><p>Abstract: [Insert first abstract] Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.</p></li>
+<li><p>Abstract: [Insert second abstract] Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.</p></li>
+</ol>
+<p>Now summarize this new abstract: [Insert new abstract to be summarized]</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hands-on Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Choose a topic you’re interested in. If you would like to use an AI-based tool for literature research, you can use <a href="https://elicit.com/">Elicit</a>.</li>
+<li>Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="thought-generation-instruct-the-model-to-think-step-by-step" class="level3">
+<h3 class="anchored" data-anchor-id="thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</h3>
+<section id="explanation-1" class="level4">
+<h4 class="anchored" data-anchor-id="explanation-1">Explanation</h4>
+<p>Thought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.</p>
+</section>
+<section id="techniques-1" class="level4">
+<h4 class="anchored" data-anchor-id="techniques-1">Techniques</h4>
+<p>Chain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.</p>
+<ul>
+<li><strong>Zero-Shot CoT</strong>: Request step-by-step reasoning without providing examples.</li>
+<li><strong>Few-Shot CoT</strong>: Provide examples of step-by-step reasoning before asking for a new response.</li>
+</ul>
+</section>
+<section id="example-prompt-chain-of-thought" class="level4">
+<h4 class="anchored" data-anchor-id="example-prompt-chain-of-thought">Example Prompt (Chain-of-Thought):</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Analyze the methodology of the following research study. Think through this step-by-step: 1. Identify the research design. 2. Evaluate the appropriateness of the chosen methods. 3. Assess potential limitations or biases. 4. Consider alternative approaches that could have been used.</p>
+<p>[Insert methodology section of a research paper]</p>
+</div>
+</div>
+</section>
+</section>
+<section id="decomposition-techniques-break-down-tasks-into-subtasks" class="level3">
+<h3 class="anchored" data-anchor-id="decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</h3>
+<section id="explanation-2" class="level4">
+<h4 class="anchored" data-anchor-id="explanation-2">Explanation</h4>
+<p>Decomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.</p>
+</section>
+<section id="techniques-2" class="level4">
+<h4 class="anchored" data-anchor-id="techniques-2">Techniques</h4>
+<ul>
+<li>Least-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here: <i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intermediate/least_to_most">Least-to-Most Prompting</a></li>
+<li>Plan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.</li>
+</ul>
+</section>
+<section id="example-prompt-plan-and-solve" class="level4">
+<h4 class="anchored" data-anchor-id="example-prompt-plan-and-solve">Example Prompt (Plan-and-Solve):</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We need to conduct a systematic literature review on [specific topic]. Let’s approach this in two phases:</p>
+<p>Planning Phase: 1. Outline the main steps needed for this systematic review. 2. For each step, briefly describe what needs to be considered.</p>
+<p>Solving Phase: Now, let’s address each step in detail, providing specific strategies and methodologies.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="exercise-essay-writing" class="level1">
+<h1>Exercise: Essay writing</h1>
+<p>The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use the techniques that you have learned so far, including providing reference texts.</p>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ol type="1">
+<li>Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI).</li>
+<li>Exchange your essay with your neighbour and provide feedback (using ChatGPT) on the clarity and coherence of the essay.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="further-resources" class="level1">
+<h1>Further Resources</h1>
+<ol class="example" type="1">
+<li><strong>Explore these prompt guides</strong>. Use ChatGPT to try out new ideas.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></p>
+<iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompting guide: A more technical guide to prompting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a>: <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p>
+<iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>
+</div>
+</div>
+</div>
+<!-- 
+:::{.callout-caution}
+## Discussion 💬 
+
+- What experiences did you have with prompting?
+- Did you find any of the techniques particularly useful?
+::: -->
 
 
 </section>
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
-    </div>
-  </div>
-</div>
- <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
+  author = {Ellis, Andrew},
+  title = {Hands-On {Practice:} {Prompting}},
+  date = {2024-06-27},
+  url = {https://virtuelleakademie.github.io/promptly-educated/pages/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Ellis, Andrew. 2024. <span>“Hands-On Practice: Prompting.”</span> June
+27, 2024. <a href="https://virtuelleakademie.github.io/promptly-educated/pages/">https://virtuelleakademie.github.io/promptly-educated/pages/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -287,6 +557,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

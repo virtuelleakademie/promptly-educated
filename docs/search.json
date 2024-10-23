@@ -394,9 +394,9 @@
   {
     "objectID": "pages/index.html",
     "href": "pages/index.html",
-    "title": "Virtuelle Akademie",
+    "title": "Hands-On Practice: Prompting",
     "section": "",
-    "text": "Prompt-Labor: Basics zu KI-Sprachmodellen\n\n\n\nMöchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.\nInhalt:\n\nWas sind KI-Sprachmodelle? Wie werden sie trainiert?\nWie generieren KI-Sprachmodelle Text?\nWie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?\n\nNächste Termine:\n23.02.2024, 14–16h\n22.04.2024, 10–12h\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/\n\n\n\n\n\n\n\n\nPrompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen\n\n\n\nMöchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.\nInhalt:\n\nWie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?\n\nNächste Termine:\n13.03.2024, 10–12h\n01.05.2024, 10–12h\n17.05.2024, 13.30–15.30\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/"
+    "text": "Designing effective prompts to instruct LLMs to generate a desired output is referred to as prompt engineering. This activity will guide you through the process of creating prompts for LLMs."
   },
   {
     "objectID": "pages/index.html#ki-kurse-der-virtuellen-akademie",
@@ -408,56 +408,56 @@
   {
     "objectID": "pages/resources.html",
     "href": "pages/resources.html",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "",
     "text": "KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nKI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#ki-orientierungshilfe-der-bfh",
     "href": "pages/resources.html#ki-orientierungshilfe-der-bfh",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "",
     "text": "KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nKI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#bildung-6.0",
     "href": "pages/resources.html#bildung-6.0",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "Bildung 6.0",
     "text": "Bildung 6.0\nDas Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässliche Informationen und Empfehlungen zum richtigen Umgang mit KI-basierten Werkzeugen (KBW) für Studierende und Lehrende auf einer Online-Plattform bereit.\n\nProjekt Bildung 6.0"
   },
   {
     "objectID": "pages/resources.html#chatgpt-an-der-hochschule",
     "href": "pages/resources.html#chatgpt-an-der-hochschule",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "ChatGPT an der Hochschule",
     "text": "ChatGPT an der Hochschule\n\nPrompts for Education: Enhancing Productivity & Learning\nUnlocking the Power of Generative AI Models and Systems such as GPT-4 and ChatGPT for Higher Education\nÜberblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\nChatGPT im Hochschulkontext – eine kommentierte Linksammlung\nUni Bern: Chatbots in der Hochschullehre"
   },
   {
     "objectID": "pages/resources.html#youtube",
     "href": "pages/resources.html#youtube",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "Youtube",
     "text": "Youtube\nLarge language models from scratch\n\nHow do large language models work: part 1\nHow do large language models work: part 2\n\nTutorials zu Prompting\n\nChatGPT Mega Prompts"
   },
   {
     "objectID": "pages/resources.html#how-does-gpt-work",
     "href": "pages/resources.html#how-does-gpt-work",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "How does GPT work?",
     "text": "How does GPT work?\n\nGenerative AI exists because of the transformer (Financial Times 12/09/2023)"
   },
   {
     "objectID": "pages/resources.html#wissenschaftliches-arbeiten",
     "href": "pages/resources.html#wissenschaftliches-arbeiten",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "Wissenschaftliches Arbeiten",
     "text": "Wissenschaftliches Arbeiten\n\nChatGPT zitieren\nRechtliche Fragen\nDidaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung (Salden 2023)"
   },
   {
     "objectID": "pages/resources.html#ethische-fragen",
     "href": "pages/resources.html#ethische-fragen",
-    "title": "Promptly Educated //",
+    "title": "Virtuelle Akademie",
     "section": "Ethische Fragen",
     "text": "Ethische Fragen\n\nPrekäre Klickarbeit hinter den Kulissen von ChatGPT\nTraumatische Klickarbeit: Die Menschen hinter ChatGPT"
   },
@@ -478,6 +478,20 @@
   {
     "objectID": "pages/activity-global-management.html#structured-prompting-techniques",
     "href": "pages/activity-global-management.html#structured-prompting-techniques",
+    "title": "Hands-On Practice: Prompting",
+    "section": "Structured prompting techniques",
+    "text": "Structured prompting techniques\n\nIn-Context Learning: Provide examples within the prompt\n\nExplanation\nIn-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model’s responses by demonstrating the desired output format or type of information.\n\n\nTechniques\n\nFew-Shot Prompting: Provide a few examples of the desired output before asking for a new response.\nZero-Shot Prompting: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.\n\n\n\nExample\n\n\n\n\n\n\n Few-Shot Prompting:\n\n\n\nSummarize the main findings of these research paper abstracts:\n\nAbstract: [Insert first abstract] Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.\nAbstract: [Insert second abstract] Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.\n\nNow summarize this new abstract: [Insert new abstract to be summarized]\n\n\n\n\n\n\n\n\nHands-on Exercise\n\n\n\n\nChoose a topic you’re interested in. If you would like to use an AI-based tool for literature research, you can use Elicit.\nCreate zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.\n\n\n\n\n\n\nThought Generation: Instruct the model to think step-by-step\n\nExplanation\nThought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.\n\n\nTechniques\nChain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.\n\nZero-Shot CoT: Request step-by-step reasoning without providing examples.\nFew-Shot CoT: Provide examples of step-by-step reasoning before asking for a new response.\n\n\n\nExample Prompt (Chain-of-Thought):\n\n\n\n\n\n\n Prompt:\n\n\n\nAnalyze the methodology of the following research study. Think through this step-by-step: 1. Identify the research design. 2. Evaluate the appropriateness of the chosen methods. 3. Assess potential limitations or biases. 4. Consider alternative approaches that could have been used.\n[Insert methodology section of a research paper]\n\n\n\n\n\nDecomposition Techniques: Break down tasks into subtasks\n\nExplanation\nDecomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.\n\n\nTechniques\n\nLeast-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here:  Least-to-Most Prompting\nPlan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.\n\n\n\nExample Prompt (Plan-and-Solve):\n\n\n\n\n\n\n Prompt:\n\n\n\nWe need to conduct a systematic literature review on [specific topic]. Let’s approach this in two phases:\nPlanning Phase: 1. Outline the main steps needed for this systematic review. 2. For each step, briefly describe what needs to be considered.\nSolving Phase: Now, let’s address each step in detail, providing specific strategies and methodologies."
+  },
+  {
+    "objectID": "pages/index.html#general-tips",
+    "href": "pages/index.html#general-tips",
+    "title": "Hands-On Practice: Prompting",
+    "section": "General tips",
+    "text": "General tips\nOpenAI give a set of  strategies for using their models. If you need examples, this might be a good place to start.\nThe strategies include:\n\nwriting clear instructions\nproviding reference texts\nsplitting tasks into subtasks\ngiving GPT ‘time to think’\nusing external tools\n\nSome general techniques are:\n\nNumbered Steps:: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.\nUse delimiters: To separate various parts of the prompt (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Provide a few examples for guidance.\n\nCombining these techniques, a template prompt might look like this:\n\n\n\n\n\n\nTemplate\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output? How long should it be?\n\n\n\nRemember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.\n\nExample\n\n\n\n\n\n\n Prompt:\n\n\n\nYou are an expert on the topic of university education and didactics. Explain the concept of “flipped classroom” to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.\n\n\nDifferent persona:\n\n\n\n\n\n\n Prompt:\n\n\n\nYou are 13 year old high school student. Explain the concept of “flipped classroom” to your friends. Use markdown to format your response. Keep you explanation concise and to the point.\n\n\nAsk the model to output a table:\n\n\n\n\n\n\n Prompt:\n\n\n\nYou are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows."
+  },
+  {
+    "objectID": "pages/index.html#structured-prompting-techniques",
+    "href": "pages/index.html#structured-prompting-techniques",
     "title": "Hands-On Practice: Prompting",
     "section": "Structured prompting techniques",
     "text": "Structured prompting techniques\n\nIn-Context Learning: Provide examples within the prompt\n\nExplanation\nIn-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model’s responses by demonstrating the desired output format or type of information.\n\n\nTechniques\n\nFew-Shot Prompting: Provide a few examples of the desired output before asking for a new response.\nZero-Shot Prompting: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.\n\n\n\nExample\n\n\n\n\n\n\n Few-Shot Prompting:\n\n\n\nSummarize the main findings of these research paper abstracts:\n\nAbstract: [Insert first abstract] Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.\nAbstract: [Insert second abstract] Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.\n\nNow summarize this new abstract: [Insert new abstract to be summarized]\n\n\n\n\n\n\n\n\nHands-on Exercise\n\n\n\n\nChoose a topic you’re interested in. If you would like to use an AI-based tool for literature research, you can use Elicit.\nCreate zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.\n\n\n\n\n\n\nThought Generation: Instruct the model to think step-by-step\n\nExplanation\nThought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.\n\n\nTechniques\nChain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.\n\nZero-Shot CoT: Request step-by-step reasoning without providing examples.\nFew-Shot CoT: Provide examples of step-by-step reasoning before asking for a new response.\n\n\n\nExample Prompt (Chain-of-Thought):\n\n\n\n\n\n\n Prompt:\n\n\n\nAnalyze the methodology of the following research study. Think through this step-by-step: 1. Identify the research design. 2. Evaluate the appropriateness of the chosen methods. 3. Assess potential limitations or biases. 4. Consider alternative approaches that could have been used.\n[Insert methodology section of a research paper]\n\n\n\n\n\nDecomposition Techniques: Break down tasks into subtasks\n\nExplanation\nDecomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.\n\n\nTechniques\n\nLeast-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here:  Least-to-Most Prompting\nPlan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.\n\n\n\nExample Prompt (Plan-and-Solve):\n\n\n\n\n\n\n Prompt:\n\n\n\nWe need to conduct a systematic literature review on [specific topic]. Let’s approach this in two phases:\nPlanning Phase: 1. Outline the main steps needed for this systematic review. 2. For each step, briefly describe what needs to be considered.\nSolving Phase: Now, let’s address each step in detail, providing specific strategies and methodologies."
