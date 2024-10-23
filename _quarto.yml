@@ -46,18 +46,23 @@ website:
         menu:
           - text: "Understanding large language models"
             file: slides/understanding-llms.qmd
-          - text: "Prompt engineering: basics"
+          - text: "Prompt Engineering: Basics"
             file: slides/prompt-engineering-basics.qmd
-          - text: "Prompt engineering: intermediate"
+          - text: "Prompt Engineering: Intermediate"
             file: slides/prompt-engineering-intermediate.qmd
+          - text: "Large Language Models in Education"  
+            file: slides/llms-in-education.qmd
 
       - icon: tools #wrench-adjustable
         text: "Resources"
         menu:
           - text: "Guides"
             file: pages/resources.qmd
-          - text: "Tools"
-            file: pages/tools.qmd
+          - text: "KI in der Lehre: Begleitdokument"
+            file: assets/pdfs/Begleitdokument.pdf
+          - text: "KI in der Lehre: Einführung"
+            file: assets/pdfs/2024-10-24_KI-Intermediate.pdf
+
 
     tools:
       # - icon: robot
@@ -184,9 +189,10 @@ custom-callout:
   # Technical Elements
   prompt-example:
     title: "Example Prompt"
-    icon-symbol: "🤖"
+    icon-symbol: "👩🏼‍🔧"
     color: "darkblue"
     collapse: false
+
   output-example:
     title: "Output Example"
     icon-symbol: "📄"
