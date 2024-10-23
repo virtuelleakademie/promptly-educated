@@ -34,11 +34,14 @@ website:
     # logo: /assets/robot.png
     background: light
     left:
-      - icon: house-door
+      - icon: backpack4
+        text: "Pre-workshop Instructions"
+        file: pages/pre-workshop.qmd
+      - icon: person-workspace
         text: "Workshop"
         file: pages/index.qmd
 
-      - icon: book #file-slides
+      - icon: aspect-ratio ##book #file-slides
         text: "Slides" # {{< fa person-chalkboard >}}
         menu:
           - text: "Presentation 1"
@@ -51,7 +54,7 @@ website:
       #     #   file: pages/activities.qmd
 
 
-      - icon: wrench-adjustable #tools
+      - icon: tools #wrench-adjustable
         text: "Resources"
         menu:
           - text: "Guides"
