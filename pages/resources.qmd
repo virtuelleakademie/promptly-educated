@@ -24,28 +24,29 @@ bibliography: ../bibliography.bib
 
 <br> <br>
 
-# KI Orientierungshilfe der BFH
+## KI Orientierungshilfe der BFH
 
 - [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
 
 - [KI-basierte Schreibtools in der Lehre – Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
 
-# Bildung 6.0
-Das Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässliche Informationen und Empfehlungen zum richtigen Umgang mit KI-basierten Werkzeugen (KBW) für Studierende und Lehrende auf einer Online-Plattform bereit.
+## Bildung 6.0
+The Bildung 6.0 project at the Bern University of Applied Sciences provides relevant and reliable information and recommendations on the proper use of AI-based tools (KBW) for students and teachers on an online platform.
 
 - [Projekt Bildung 6.0](https://www.bildung6.ch/)
 
 
-# Wissenschaftliches Arbeiten
+## Acedemic writing
 
 - [ChatGPT zitieren](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
--  
-# Rechtliche Fragen
+  
+
+## Legal questions
 
 - [Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/9734) [@saldenDidaktischeUndRechtliche2023]
 
 
-# Prompt Engineering
+## Prompt Engineering
 
 **Explore these prompt guides**
 
@@ -57,7 +58,7 @@ Das Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässl
 
 
 :::{.callout-tip collapse="true"}
-## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
+### Learn prompting: An comprehensive (and free) guide.
 {{< bi link >}} [Learn prompting](https://learnprompting.org/docs/introduction)
 
 ```{=html}
@@ -68,7 +69,7 @@ Das Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässl
 
 
 :::{.callout-tip collapse="true"}
-## Prompting guide: A more technical guide to prompting
+### Prompting guide: A more technical guide to prompting
 {{< bi link >}} [Prompting guide](https://www.promptingguide.ai/): **DAIR.AI** (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.
 
 ```{=html}
