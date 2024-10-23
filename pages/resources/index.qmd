@@ -19,7 +19,7 @@ about:
       text: Email
       href: mailto:andrew.ellis@bfh.ch
 
-bibliography: ../bibliography.bib
+bibliography: ../../bibliography.bib
 ---
 
 <br> <br>

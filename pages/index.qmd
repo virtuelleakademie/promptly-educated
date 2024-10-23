@@ -1,9 +1,9 @@
 ---
-title: "Hands-On Practice: Prompting"
+title: "Using AI in Education: Intermediate"
 description: |
   Basic prompting techniques.
 # date: last-modified
-date: 27 June, 2024
+date: 24 October, 2024
 date-format: "DD MMM, YYYY"
 author: 
   - name: Andrew Ellis
@@ -19,8 +19,8 @@ format:
         toc: true
         code-fold: true
         code-link: true
-        callout-appearance: simple
-        callout-icon: false
+        # callout-appearance: simple
+        callout-icon: true
 ---
 
 Designing effective prompts to instruct LLMs to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
@@ -37,6 +37,21 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 # Prompting
 
 
+
+{{< revealjs file="../slides/presentation-1.html" height="500px" class="ratio ratio-16x9" >}}
+
+
+::: todo
+Remember to complete this section.
+:::
+
+::: test
+This information is crucial for understanding the concept.
+:::
+
+::: {.thumbs-up title="That was a hard task!"}
+You did a great job completing this task.
+:::
 
 
 ## General tips
