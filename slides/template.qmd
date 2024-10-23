@@ -15,7 +15,7 @@ format:
           # data-background-size: contain
           data-background-opacity: "1"
         
-        header-logo: ../assets/bfh-logo.png
+        # header-logo: ../assets/bfh-logo.png
         # header: Berner Fachhochschule | Bern University of Applied Sciences
         # footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
         footer: Berner Fachhochschule | Bern University of Applied Sciences
