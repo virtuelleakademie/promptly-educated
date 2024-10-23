@@ -1,0 +1,15 @@
+---
+title: "Pre-Workshop Instructions"
+format: html
+---
+
+# Chatbot accounts
+
+## Claude
+
+## ChatGPT
+
+## HuggingChat
+
+
+# Preparation
