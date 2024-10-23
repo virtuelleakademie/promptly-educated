@@ -14,17 +14,21 @@ format:
           # data-background-image: ../assets/background-purple.png
           # data-background-size: contain
           data-background-opacity: "1"
-        # logo: ../assets/robot.png
+        
         header-logo: ../assets/bfh-logo.png
-        header: Berner Fachhochschule | Bern University of Applied Sciences
-        footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
-        navigation-mode: vertical
+        # header: Berner Fachhochschule | Bern University of Applied Sciences
+        # footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
+        footer: Berner Fachhochschule | Bern University of Applied Sciences
+        logo: ../assets/bfh-logo.png
+        navigation-mode: linear
         progress: true
         scrollable: false
         slide-number: true
         slide-level: 2
         show-slide-number: all
-        controls-layout: bottom-right
+        hash: true
+        controls: true
+        # controls-layout: bottom-right
         controls-tutorial: true
         preview-links: auto
         chalkboard: true
@@ -43,8 +47,8 @@ format:
         callout-icon: false
 revealjs-plugins:
   - attribution
-filters:
-  - reveal-header
+# filters:
+#   - reveal-header
 ---
 
 
