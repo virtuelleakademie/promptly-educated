@@ -118,6 +118,7 @@ custom-callout:
   #   icon-symbol: "👍🏼"
   #   color: "steelblue"
 
+
   # Activity Types
   individual:
     title: "Individual Work"
@@ -133,7 +134,7 @@ custom-callout:
 
   group:
     title: "Group Work"
-    icon-symbol: "👥👥"
+    icon-symbol: "👥"
     color: "purple"
     collapse: false
 
@@ -185,6 +186,11 @@ custom-callout:
     title: "Example Prompt"
     icon-symbol: "🤖"
     color: "darkblue"
+    collapse: false
+  output-example:
+    title: "Output Example"
+    icon-symbol: "📄"
+    color: "darkgreen"
     collapse: true
 
   prompt-template:
