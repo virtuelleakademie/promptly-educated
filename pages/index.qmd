@@ -37,8 +37,15 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 # Prompting
 
 
+<!-- [Full Screen](../slides/presentation-1.qmd)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/presentation-1.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+``` -->
+
 
 {{< revealjs file="../slides/presentation-1.html" height="500px" class="ratio ratio-16x9" >}}
+
 
 
 ::: {.todo collapse="true"}
@@ -52,6 +59,8 @@ This information is crucial for understanding the concept.
 ::: {.thumbs-up title="That was a hard task!"}
 You did a great job completing this task.
 :::
+
+{{< revealjs file="../slides/presentation-2.html" height="500px" class="ratio ratio-16x9" >}}
 
 
 ## General tips
