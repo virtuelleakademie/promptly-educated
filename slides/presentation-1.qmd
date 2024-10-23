@@ -27,7 +27,7 @@ format:
         slide-level: 2
         show-slide-number: all
         hash: true
-        controls: true
+        controls: auto
         # controls-layout: bottom-right
         controls-tutorial: true
         preview-links: auto
@@ -45,6 +45,7 @@ format:
           markers: true
         callout-appearance: simple
         callout-icon: false
+        smaller: true
 revealjs-plugins:
   - attribution
 # filters:
