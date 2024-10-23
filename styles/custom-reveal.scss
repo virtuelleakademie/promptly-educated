@@ -91,3 +91,12 @@ $presentation-heading-font: "News Cycle", sans-serif !default;
   margin-bottom: 0.3rem !important;
   margin-top: 0.3rem !important;
 }
+// math font size
+.math.inline .MathJax {
+  font-size: 200% !important;
+}
+
+.math.display .MathJax {
+  font-size: 600% !important;
+  color: black;
+}
