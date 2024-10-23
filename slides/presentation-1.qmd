@@ -15,7 +15,7 @@ format:
           # data-background-size: contain
           data-background-opacity: "1"
         
-        header-logo: ../assets/bfh-logo.png
+        # headetmr-logo: ../assets/bfh-logo.png
         # header: Berner Fachhochschule | Bern University of Applied Sciences
         # footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
         footer: Berner Fachhochschule | Bern University of Applied Sciences
@@ -78,6 +78,29 @@ revealjs-plugins:
 
 [{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
 
+<!-- --------------------------------------------------------------------------- -->
+
+
+## Wie machen LLMs das? 1/2
+
+LLM bewerten die Wahrscheinlichkeit eines Textes. Dabei lernen sie die Beziehungen zwischen Wörtern und Sätzen.
+
+  Satz                                                             | Wahrscheinlichkeit
+-------------------------------------------------------------------|-------------------
+  Die Katze sass auf der **Bank**. Die **Bank** war aus Holz       | 90 %
+  Die Katze sass auf der **Bank**. Die **Bank** war geschlossen    | 10 %
+<br>
+**Training von LLMs**:
+
+  - mit **ALLEN qualitativ hochwertigen, weltweit zugänglichen menschlichen Sprachdaten**
+  - Umfasst Bücher, Zeitungen, geschriebene Sprachen, Internet-Dialoge und transkribierte Video-Dialoge
+
+OpenAI brauchte $13\cdot 10^{12}$ Tokens (~100 Mio Bücher) um GPT-4 mit ca. $1\cdot 10^{12}$ Parameter, dh. Terabytes an Speicher, auf Tausenden von GPUs mehrere Monate zu trainieren.
+
+[n-gram](https://huggingface.co/spaces/liujch1998/infini-gram)
+
+
+<!-- --------------------------------------------------------------------------- -->
 
 # What are Large Language Models (LLMs)?
 
