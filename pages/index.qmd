@@ -23,6 +23,26 @@ format:
         callout-icon: true
 ---
 
+:::{.setup title="Pre-Workshop Setup"}
+
+In this workshop, I recommend working with the following chatbots: 
+
+| Chatbot | Description | Features |
+|---------|--------------|----------|
+| [Claude](https://claude.ai/) | Considered by many to be using the best LLMs for a variety of tasks, such as coding and general-purpose writing. | Artifacts (output in a single document), displays HTML, upload files |
+| [ChatGPT](https://chatgpt.com) | The most popular chatbot, generally good for coding and writing. Its latest models are claimed to perform very well on reasoning tasks. | Web access, GPTs, Python code execution, Canvas, upload files |
+| [HuggingChat](https://huggingface.co/chat/) | A chatbot that allows you to use a variety of different open-source LLMs, such as those based on Llama. It's free, but you need to create an account. | Web search, Assistants |
+
+## Preparation
+You will need to create an account on each of these platforms. For Claude and ChatGPT, you will have to use your mobile number to verify your account.
+
+
+## Additional Resources
+- [Official Claude Documentation](https://www.anthropic.com/claude)
+- [ChatGPT Documentation](https://platform.openai.com/docs/guides/chat)
+- [HuggingFace Documentation](https://huggingface.co/docs/hub/index)
+
+:::
 
 # Workshop Overview
 
@@ -34,8 +54,8 @@ The workshop is divided into several blocks, each focusing on different aspects 
 - Foundations Block (45 min)
 - Break (15 min)
 - Intermediate Block (45 min)
-- Implementation Block (45 min)
-- Closing (15 min)
+- Implementation Block (20 min)
+- Closing Block (30 min)
 :::
 
 
@@ -45,29 +65,49 @@ The workshop is divided into several blocks, each focusing on different aspects 
 
 :::{.setup title="Technical Setup"}
 ### Initial Setup (5 min)
-- Login to LLM platform
+- Login to LLM platforms
 - Test access
 - Quick troubleshooting
 :::
 
-## Opening Activity: LLM Prediction Challenge
 
-:::{.screens-down title="Group Discussion"}
-### LLM Prediction Challenge (10 min)
-1. Display 3 surprising LLM outputs
-2. Group discussion: What prompts created these?
-3. Collect hypotheses
-4. Reveal actual prompts
+## Opening Activity: The Wolf, Goat, and Cabbage Problem (10 min)
+
+:::{.try title="Hands-On Practice"}
+Enter the following prompt:
+
+A farmer needs to transport a wolf, a goat, and a cabbage across a river using a small boat. The boat can carry only the farmer and one other item (either the wolf, the goat, or the cabbage) at a time. However, if left together without the farmer's supervision: The wolf will eat the goat, and the goat will eat the cabbage. The challenge is to figure out how the farmer can get all three items across the river safely.
+
+:::
+
+:::{.individual title="Individual Practice"}
+1. Can you solve this task?
+2. Can the LLM solve this task?
+3. If not, why not?
+:::
+
+:::{.pair title="In pairs"}
+
+- Discuss the output of the LLM
+- Share your thoughts
+:::
+
+:::{.group title="In groups"}
+- Based on your current knowledge of LLMs, what do you think is the problem?
+- How could we modify the task description to make it easier for the LLM?
+- What does this say about the capabilities of LLMs?
 :::
 
 
+
+
+
+# Foundation Block (45 min)
 
 ## Understanding Large Language Models (LLMs)
 
 {{< revealjs file="../slides/understanding-llms.html" height="500px" class="ratio ratio-16x9" >}}
 
-
-# Foundation Block (45 min)
 
 ## Prompt Engineering Basics
 
@@ -90,25 +130,91 @@ Step-by-step prompt building:
    
 :::
 
-## Prompt Detective Exercise
 
-:::{.group}
-## Prompt Detective Exercise (15 min)
+:::{.prompt-example title="Step 1: Start with a basic prompt" collapse="true"}
+## Step 1: Start with a basic prompt
+Prompt: Write a short story about a person who finds a magic lamp.
+:::
 
-1. Groups receive successful outputs
-2. Try to reconstruct prompts
-3. Test their versions
-4. Compare with original
-5. Discuss differences
+:::{.prompt-example title="Step 2: Add role specification" collapse="true"}
+## Step 2: Add role specification
+Prompt: You are a professional fiction writer. Write a short story about a person who finds a magic lamp.
+:::
+
+:::{.prompt-example title="Step 3: Add context details" collapse="true"}
+## Step 3: Add context details
+Prompt: You are a professional fiction writer. Write a short story (around 300 words) about a young woman named Sarah who finds an old, tarnished magic lamp while cleaning out her grandmother's attic. The story should be set in a modern, urban setting.
+:::
+
+:::{.prompt-example title="Step 4: Add output formatting" collapse="true"}
+## Step 4: Add output formatting
+Prompt: You are a professional fiction writer. Write a short story (around 300 words) about a young woman named Sarah who finds an old, tarnished magic lamp while cleaning out her grandmother's attic. The story should be set in a modern, urban setting. Format your response using Markdown, with a title and proper paragraphs.
+:::
+
+:::{.prompt-example title="Step 5: Compare results at each stage" collapse="true"}
+## Step 5: Compare results at each stage
+- How does the output change at each stage?
+- What effect does each change have?
+:::
+
+:::{.pair title="In pairs"}
+- Share your thoughts with your neighbour
+:::
+
+
+
+## Prompt Reverse-Engineering Exercise
+
+:::{.individual title="Prompt Detective Exercise (15 min)"}
+<!-- ## Prompt Detective Exercise (15 min) -->
+1. Examine the outputs below and try to reconstruct the prompt that could have generated it.
+2. Test your prompt with the LLM and compare the output to the original.
+:::
+
+### Output 1:
+
+| Element | Symbol | Atomic Number | Atomic Mass |
+|---------|--------|----------------|-------------|
+| Hydrogen | H | 1 | 1.008 |
+| Helium | He | 2 | 4.003 |
+| Lithium | Li | 3 | 6.941 |
+| Beryllium | Be | 4 | 9.012 |
+| Boron | B | 5 | 10.811 |
+| Carbon | C | 6 | 12.011 |
+
+:::
+
+
+
+
+### Output 2:
+
+| Greek Letter | Pronunciation | Example Usage |
+|--------------|----------------|----------------|
+| α (alpha)    | al-fah         | Used to represent the first letter of the Greek alphabet, or the first in a series. |
+| β (beta)     | bay-tah        | Used in mathematics and science to represent various constants or coefficients. |
+| γ (gamma)    | gam-ah         | Used in physics to represent the ratio of two quantities, or in mathematics as a function. |
+| δ (delta)    | del-tah        | Used to represent a change or difference in a quantity, or as a symbol for a small increment. |
+| ε (epsilon)  | ep-si-lon      | Used in mathematics to represent a small positive number, or in engineering to represent strain. |
+| π (pi)       | pie            | Used to represent the ratio of a circle's circumference to its diameter, a fundamental constant in mathematics. |
+
+:::
+
+:::{.individual title="Prompt Detective Exercise (15 min)"}
+### Your Task:
+
+1. Discuss with your group:
+   - What elements did you include in your prompt?
+   - How did your output differ from the original?
+   - What changes could you make to your prompt to better match the desired output?
 :::
 
 
 # Break (15 min)
 
 :::{.break title="Break Time"}
-## Break (15 min)
-- Movement encouraged
-- Optional experiments displayed
+## Coffee Break
+
 - Technical support available
 :::
 
@@ -116,7 +222,7 @@ Step-by-step prompt building:
 
 # Intermediate Block (45 min)
 
-## Intermediate Techniques
+## Prompt Engineering Intermediate Techniques
 
 {{< revealjs file="../slides/prompt-engineering-intermediate.html" height="500px" class="ratio ratio-16x9" >}}
 
@@ -127,20 +233,65 @@ Step-by-step prompt building:
 
 ### Error-First Learning Activity (20 min)
 
-1. Present common error scenarios:
-   - Vague instructions
-   - Missing context
-   - Poor formatting
-2. Groups attempt fixes
-3. Test solutions
-4. Document improvements
+Upload a research paper (ChatGPT or Claude)
+
+:::{.prompt-example title="Vague instructions" collapse="false"}
+Write a summary of the following research paper.
 :::
+
+:::{.tip title="Potential improvements"}
+Potential improvements:
+
+- Specify what should be summarized (e.g. a book, article, etc.)
+- Provide context about the topic or content
+- Give guidance on the desired length or format of the summary
+
+:::
+
+:::{.prompt-example title="Missing Context" collapse="false"}
+
+Prompt: Explain the concept of "machine learning" to an audience.
+:::
+
+:::{.tip title="Potential improvements"}
+Potential improvements:
+
+- Background information about the audience (e.g. technical expertise, age group, etc.)
+- Desired level of technical depth or terminology
+- Expected length or format of the explanation
+:::
+
+:::{.prompt-example title="Poor Formatting" collapse="false"}
+
+Prompt: Provide a table with information about the first 10 elements of the periodic table, including their symbols, atomic numbers, and atomic masses.
+:::
+
+:::{.tip title="Potential improvements"}
+Potential improvements:
+
+- Specify the desired output format (e.g. table, bullet points, etc.)
+- Clarify the order and arrangement of information
+- Indicate any additional details needed (e.g. units, descriptions, etc.)
+:::
+
+
+:::{.individual title="Individual Practice"}
+
+- Attempt fixes
+
+:::
+
+:::{.group title="Discuss fixes"}
+- Discuss fixes with your group
+:::
+:::
+
 
 ## Prompt Surgery Workshop
 
 :::{.group title="Collaborative Analysis"}
-### Prompt Surgery Workshop (25 min)
-1. Examine problematic prompts
+### Reducing hallucinations (10 min)
+1. Examine problematic prompt
 2. Diagnose issues
 3. Apply fixes
 4. Test and refine
@@ -148,288 +299,150 @@ Step-by-step prompt building:
 :::
 
 
-# Implementation Block (45 min)
+:::{.prompt-example title="Summarize research" collapse="false"}
+Prompt: Summarize key findings on the development of metacognition and self-regulated learning strategies in children.
+:::
+
+:::{.output-example title="Output" collapse="true"}
+
+# Key Findings on the Development of Metacognition and Self-Regulated Learning (SRL) Strategies in Children
+
+## 1. Emergence of Metacognition
+- **Early Development**: Metacognitive skills, such as the ability to monitor one’s own thinking and regulate learning, begin to emerge in early childhood. Children as young as 3-5 years old show some capacity for metacognitive thinking, though it is rudimentary.
+- **Growth During School Years**: Between ages 7 and 12, children significantly improve their metacognitive skills, particularly their ability to reflect on their thinking and adjust learning strategies. This period marks the transition from implicit, intuitive metacognition to more explicit forms.
+- **Continued Development into Adolescence**: Adolescents show greater sophistication in planning, monitoring, and evaluating their learning, reflecting the continued maturation of executive functions and cognitive control.
+
+## 2. Components of Self-Regulated Learning
+- **Planning**: The ability to set goals and plan learning strategies develops with age. Young children often need external guidance, but by late elementary school, they begin to adopt more autonomous strategies for planning their work.
+- **Monitoring and Evaluation**: Young children struggle to accurately monitor their learning progress, often overestimating their understanding or skills. As they grow older, they become more accurate in assessing their learning, which is crucial for self-correction and improvement.
+- **Control of Learning Strategies**: Children initially rely on simple strategies, such as repetition. Over time, they learn to apply more sophisticated strategies (e.g., elaboration, summarization), and they become more flexible in selecting strategies suited to different tasks.
+
+## 3. Influences on Development
+- **Cognitive Maturity**: The development of executive functions, such as working memory and cognitive flexibility, plays a vital role in enhancing metacognition and self-regulated learning skills.
+- **Social and Environmental Factors**: Teachers, parents, and peers provide models and feedback that shape children's development of metacognitive and SRL strategies. Scaffolding and direct instruction from adults are especially helpful in the early stages.
+- **Task Complexity and Experience**: Exposure to a variety of tasks, particularly those that challenge children’s cognitive limits, fosters the development of metacognitive strategies. Success in tasks requiring problem-solving or critical thinking accelerates metacognitive growth.
+
+## 4. Challenges in Metacognitive Development
+- **Overconfidence**: Younger children often exhibit overconfidence in their abilities, underestimating the difficulty of tasks and overestimating their understanding. This diminishes as they gain more experience and feedback.
+- **Transfer of Skills**: While children may develop metacognitive strategies in specific contexts, transferring these skills to new, unfamiliar situations can be difficult. Explicit teaching and practice in various contexts enhance transferability.
+
+## 5. Educational Implications
+- **Instructional Approaches**: Instruction that encourages reflection, self-assessment, and the explicit teaching of learning strategies can accelerate metacognitive and SRL development. For example, teaching students how to set goals, self-monitor, and adjust strategies based on feedback improves their learning outcomes.
+- **Role of Feedback**: Timely and specific feedback helps children refine their self-assessment skills and encourages them to adjust their learning strategies more effectively.
+- **Technology and Tools**: Digital tools and adaptive learning platforms that provide real-time feedback and promote self-reflection can be particularly effective in helping children develop metacognitive and SRL skills.
+
+In summary, the development of metacognition and self-regulated learning strategies is a gradual process that builds on both cognitive maturation and experience. With proper guidance and instruction, children become increasingly capable of managing and directing their own learning effectively.
+
+:::
+
+:::{.tip title="Potential improvements"}
+Strategies to reduce hallucination include:
+
+1. Providing relevant factual context from trusted sources.
+2. Instructing the LLM to admit when it lacks knowledge about a topic.
+
+The key is to carefully craft prompts and contexts that guide the LLM towards factual responses and away from hallucinating or making up information.
+:::
+
+
+
+# Implementation Block (30 min)
 
 ## Anki Flashcard Project
 
+[Anki](https://apps.ankiweb.net/ is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
+
+One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.
+
+However, Anki requires a lot of manual work to create effective flashcards. In this workshop, we will use an LLM to generate the flashcards for us.
+
+
+:::{.tip title="Anki Flashcard Project" collapse="false"}
+The simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).
+
+Anki can import flashcards in a variety of formats, including Anki's native format, but also from a comma-separated values (CSV) file.
+
+A CSV file is a text file that uses a comma to separate values. Each line of the file is a row, and each row has of one or more columns, separated by commas.
+
+If we have the following list of terms and definitions:
+
+| term | definition |
+|------|------------|
+| Metacognition | "The ability to think about one's own thinking processes" |
+| Self-Regulated Learning | "The process of taking control of and evaluating one's own learning" |
+| Executive Functions | "Higher-order cognitive processes like working memory and cognitive flexibility" |
+| Scaffolding | "Support provided by teachers or peers to help students learn new skills" |
+
+we can save these in a CSV file like this:
+```
+term,definition
+Metacognition,"The ability to think about one's own thinking processes"
+Self-Regulated Learning,"The process of taking control of and evaluating one's own learning"
+Executive Functions,"Higher-order cognitive processes like working memory and cognitive flexibility"
+Scaffolding,"Support provided by teachers or peers to help students learn new skills"
+```
+
+
+If we save the contents above in a file called `anki-flashcards.csv`, we can import them into Anki by selecting the `File -> Import... menu item.
+:::
+
+
+:::{.checkpoint title="Goal"}
+The goal of this project is to create a set of flashcards based on your teaching material, and to save these in a CSV file that can be imported into Anki.
+:::
+
+
 :::{.individual title="Project Work"}
-### Anki Flashcard Project - Phase 1 (15 min)
+### Anki Flashcard Project - Phase 1 (10 min)
 - Select teaching material
-- Apply learned techniques
+- Apply learned prompting techniques
 - Create initial flashcard prompt
 - Test and document results
 :::
 
 :::{.group title="Peer Review"}
-### Group Refinement - Phase 2 (15 min)
+### Group Refinement - Phase 2 (10 min)
 - Form groups of 3-4
 - Share and test prompts
 - Peer review using checklist
 - Refine based on feedback
 :::
 
-:::{.export title="Technical Implementation"}
-### Export Phase - Phase 3 (15 min)
-- Format for Anki import
+:::{.export title="Optional"}
+### Export Phase - Phase 3 (10 min)
+- Install Anki
 - Test import process
 - Troubleshoot issues
-- Document best practices
 :::
 
 
-# Closing Block (15 min)
+# Closing Block (30 min)
 
-## Teaching Scenario Planning
+## Optional AI and learning environments
 
-:::{.reflect title="Planning Ahead"}
-### Teaching Scenario Planning (10 min)
-1. Choose specific teaching task
-2. Design implementation plan
-3. Note potential challenges
-4. Identify success metrics
-:::
+{{< revealjs file="../slides/ai-learning-environments.html" height="500px" class="ratio ratio-16x9" >}}
+
+
 
 ## Final Wrap-Up
 
 :::{.checkpoint title="Wrap-Up"}
 ### Final Review (5 min)
 - Key takeaways
-- Success strategies
 - Next steps
-- Resource sharing
-:::
-
-
-
-<!-- -REST OF DOCUMENT -------------------------------------------------------------------------- -->
-
-
-Designing effective prompts to instruct LLMs to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
-
-:::{.callout-tip}
-- In general, it is advisable to improve your prompting strategy by **iterating**. 
-
-- Start with a simple prompt, see what the model generates, and then refine. Repeat this process until you are satisfied with the results. 
-
-- Once you have a good prompt, you can use it in a new chat session - in this way, the "failed" attempts will not be part of the context.
 
 :::
-
-# Prompting
-
-
-<!-- [Full Screen](../slides/presentation-1.qmd)
-
-```{=html}
-<iframe class="slide-deck" src="../slides/presentation-1.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
-``` -->
-
-
-
-
-
-:::{.pair collapse="true"}
-Remember to complete this section.
-:::
-
-
-
-::: {.thumbs-up title="That was a hard task!"}
-You did a great job completing this task.
-:::
-
-:::{.checkpoint}
-
-haha
-:::
-
-{{< revealjs file="../slides/prompt-engineering-basics.html" height="500px" class="ratio ratio-16x9" >}}
-
-
-
-## General tips
-
-OpenAI give a set of [{{< bi link >}} strategies](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)  for using their models. If you need examples, this might be a good place to start. 
-
-
-The strategies include:
-
-- writing clear instructions
-- providing reference texts
-- splitting tasks into subtasks
-- giving GPT 'time to think'
-- using external tools
-
-
-Some general techniques are:
-
-- **Numbered Steps:**: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.
-
-- **Use delimiters:** To separate various parts of the prompt (e.g. `"`, \`,, `'`, `|`, `#`, ...).
-
-- **Few-shot prompting:** Provide a few examples for guidance.
-
-Combining these techniques, a template prompt might look like this:
-
-:::{.callout-tip}
-## Template
-1) Role: who is being simulated?
-2) Task: what is to be done?
-3) Steps: what are the steps to complete the task?
-4) Context: what is the context of the task?
-5) Goal: what is the goal of the task?
-6) Format: what is the format of the output? How long should it be?
-:::
-
-Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.
-
-### Example
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-You are an expert on the topic of university education and didactics. Explain the concept of "flipped classroom" to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.
-:::
-
-
-Different persona:
-
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-You are 13 year old high school student. Explain the concept of "flipped classroom" to your friends. Use markdown to format your response. Keep you explanation concise and to the point.
-:::
-
-Ask the model to output a table:
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows.
-:::
-
-
-## Structured prompting techniques
-
-### In-Context Learning: Provide examples within the prompt
-
-#### Explanation
-In-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model's responses by demonstrating the desired output format or type of information.
-
-#### Techniques
-
-- **Few-Shot Prompting**: Provide a few examples of the desired output before asking for a new response.
-
-- **Zero-Shot Prompting**: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.
-
-  
-#### Example
-
-:::{.callout-note}
-## {{< bi person >}} Few-Shot Prompting:
-Summarize the main findings of these research paper abstracts:
-
-1. Abstract: [Insert first abstract]
-   Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.
-
-2. Abstract: [Insert second abstract]
-   Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.
-
-Now summarize this new abstract:
-[Insert new abstract to be summarized]
-
-:::
-
-
-:::{.callout-important}
-## Hands-on Exercise
-1. Choose a topic you're interested in. If you would like to use an AI-based tool for literature research, you can use [Elicit](https://elicit.com/).
-2. Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.
-:::
-
-
-
-
-
-
-
-
-
-###  Thought Generation: Instruct the model to think step-by-step
-
-
-
-
-
-
-#### Explanation
-Thought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.
-
-#### Techniques
-Chain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.
-
-- **Zero-Shot CoT**: Request step-by-step reasoning without providing examples.
-- **Few-Shot CoT**: Provide examples of step-by-step reasoning before asking for a new response.
-
-#### Example Prompt (Chain-of-Thought):
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-Analyze the methodology of the following research study. Think through this step-by-step:
-1. Identify the research design.
-2. Evaluate the appropriateness of the chosen methods.
-3. Assess potential limitations or biases.
-4. Consider alternative approaches that could have been used.
-
-[Insert methodology section of a research paper]
-:::
-
-
-
-### Decomposition Techniques: Break down tasks into subtasks
-
-
-#### Explanation
-Decomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.
-
-#### Techniques
-
-- Least-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here: {{< bi link >}} [Least-to-Most Prompting](https://learnprompting.org/docs/intermediate/least_to_most)
-- Plan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.
-
-#### Example Prompt (Plan-and-Solve):
-
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-
-We need to conduct a systematic literature review on [specific topic]. Let's approach this in two phases:
-
-Planning Phase:
-1. Outline the main steps needed for this systematic review.
-2. For each step, briefly describe what needs to be considered.
-
-Solving Phase:
-Now, let's address each step in detail, providing specific strategies and methodologies.
-:::
-
-
-
-# Exercise: Essay writing
-
-The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use  the techniques that you have learned so far, including providing reference texts.
-
-:::{.callout-important}
-1. Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI). 
-2. Exchange your essay with your neighbour and provide feedback (using ChatGPT) on the clarity and coherence of the essay.
-:::
-
-
 
 
 
 
 # Further Resources
 
-(@) **Explore these prompt guides**. Use ChatGPT to try out new ideas.
+**Explore these prompt guides**.
+
+@schulhoffPromptReportSystematic2024 provide a comprehensive overview of the current state of prompt engineering.
+
+The following websites are excellent resources for learning about prompting:
 
 :::{.callout-tip collapse="true"}
 ## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
@@ -439,6 +452,7 @@ The goal of this exercise is to develop prompting skills. Focusing on structurin
 <iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
 ``` 
 :::
+
 
 
 :::{.callout-tip collapse="true"}
@@ -462,4 +476,7 @@ The goal of this exercise is to develop prompting skills. Focusing on structurin
 - What experiences did you have with prompting?
 - Did you find any of the techniques particularly useful?
 ::: -->
+
+
+
 
