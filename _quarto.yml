@@ -34,9 +34,9 @@ website:
     # logo: /assets/robot.png
     background: light
     left:
-      - icon: backpack4
-        text: "Pre-workshop Setup"
-        file: pages/pre-workshop.qmd
+      # - icon: backpack4
+      #   text: "Pre-workshop Setup"
+        # file: pages/pre-workshop.qmd
       - icon: person-workspace
         text: "Workshop"
         file: pages/index.qmd
