@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/template.html</loc>
-    <lastmod>2024-10-23T10:44:02.464Z</lastmod>
-  </url>
-  <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/pages/index.html</loc>
-    <lastmod>2024-10-23T15:20:16.951Z</lastmod>
+    <lastmod>2024-10-24T00:30:13.681Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/prompt-engineering-interediate.html</loc>
-    <lastmod>2024-10-23T14:00:19.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/tools.html</loc>
-    <lastmod>2024-10-22T13:07:55.189Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/pre-workshop.html</loc>
-    <lastmod>2024-10-23T13:06:00.511Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/template.html</loc>
+    <lastmod>2024-10-24T00:32:40.582Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/pages/resources.html</loc>
-    <lastmod>2024-10-23T15:30:51.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/prompt-engineering-basics.html</loc>
-    <lastmod>2024-10-23T20:17:03.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/understanding-llms.html</loc>
-    <lastmod>2024-10-23T17:02:42.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/presentation-1.html</loc>
-    <lastmod>2024-10-23T13:11:54.457Z</lastmod>
+    <lastmod>2024-10-23T20:21:18.186Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/slides/prompt-engineering-intermediate.html</loc>
     <lastmod>2024-10-23T21:52:08.846Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/workshop-structure.html</loc>
-    <lastmod>2024-10-23T14:56:31.865Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/ai-learning-environments.html</loc>
+    <lastmod>2024-10-24T00:28:29.831Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/workshop-global-management.html</loc>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/pre-workshop.html</loc>
+    <lastmod>2024-10-23T22:12:02.657Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/tools.html</loc>
+    <lastmod>2024-10-22T13:07:55.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/prompt-engineering-basics.html</loc>
+    <lastmod>2024-10-23T22:59:44.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/understanding-llms.html</loc>
+    <lastmod>2024-10-23T22:42:22.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/slides/llms-in-education.html</loc>
     <lastmod>2024-10-23T21:25:47.693Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/workshop-structure.html</loc>
+    <lastmod>2024-10-23T15:44:38.773Z</lastmod>
   </url>
 </urlset>

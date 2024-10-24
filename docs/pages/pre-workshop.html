@@ -79,125 +79,15 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-testing.callout {
-  border-left-color: green;
+div.callout-setup.callout {
+  border-left-color: gray;
 }
-div.callout-testing.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
+div.callout-setup.callout-style-default > .callout-header {
+  background-color: rgb(from gray r g b / 13%);
 }
-div.callout-testing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-testing.callout-style-default .callout-icon::before, div.callout-testing.callout-titled .callout-icon::before {
-  content: '🧪';
-  background-image: none;
-}
-div.callout-try.callout {
-  border-left-color: blue;
-}
-div.callout-try.callout-style-default > .callout-header {
-  background-color: rgb(from blue r g b / 13%);
-}
-div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
-  content: '🔄';
-  background-image: none;
-}
-div.callout-screens-down.callout {
-  border-left-color: orange;
-}
-div.callout-screens-down.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
-}
-div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
-  content: '🔽';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: purple;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  content: '👥';
-  background-image: none;
-}
-div.callout-individual.callout {
-  border-left-color: steelblue;
-}
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  content: '💻';
-  background-image: none;
-}
-div.callout-prompt-template.callout {
-  border-left-color: indigo;
-}
-div.callout-prompt-template.callout-style-default > .callout-header {
-  background-color: rgb(from indigo r g b / 13%);
-}
-div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
-  content: '📋';
-  background-image: none;
-}
-div.callout-tip.callout {
-  border-left-color: gold;
-}
-div.callout-tip.callout-style-default > .callout-header {
-  background-color: rgb(from gold r g b / 13%);
-}
-div.callout-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-tip.callout-style-default .callout-icon::before, div.callout-tip.callout-titled .callout-icon::before {
-  content: '💡';
-  background-image: none;
-}
-div.callout-timing.callout {
-  border-left-color: red;
-}
-div.callout-timing.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
-  content: '⏱️';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: purple;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  content: '💭';
-  background-image: none;
-}
-div.callout-checkpoint.callout {
-  border-left-color: purple;
-}
-div.callout-checkpoint.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-checkpoint .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-checkpoint.callout-titled .callout-icon::before {
-  content: '🎯';
-  background-image: none;
-}
-div.callout-screens-up.callout {
-  border-left-color: green;
-}
-div.callout-screens-up.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
-  content: '🔼';
+div.callout-setup .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup.callout-titled .callout-icon::before {
+  content: '⚙️';
   background-image: none;
 }
 div.callout-feedback.callout {
@@ -222,37 +112,59 @@ div.callout-break.callout-style-default .callout-icon::before, div.callout-break
   content: '☕';
   background-image: none;
 }
-div.callout-setup.callout {
-  border-left-color: gray;
+div.callout-pair.callout {
+  border-left-color: forestgreen;
 }
-div.callout-setup.callout-style-default > .callout-header {
-  background-color: rgb(from gray r g b / 13%);
+div.callout-pair.callout-style-default > .callout-header {
+  background-color: rgb(from forestgreen r g b / 13%);
 }
-div.callout-setup .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup.callout-titled .callout-icon::before {
-  content: '⚙️';
+div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
+  content: '👥';
   background-image: none;
 }
-div.callout-prompt-example.callout {
-  border-left-color: darkblue;
+div.callout-tip.callout {
+  border-left-color: gold;
 }
-div.callout-prompt-example.callout-style-default > .callout-header {
-  background-color: rgb(from darkblue r g b / 13%);
+div.callout-tip.callout-style-default > .callout-header {
+  background-color: rgb(from gold r g b / 13%);
 }
-div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
-  content: '🤖';
+div.callout-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-tip.callout-style-default .callout-icon::before, div.callout-tip.callout-titled .callout-icon::before {
+  content: '💡';
   background-image: none;
 }
-div.callout-export.callout {
-  border-left-color: brown;
+div.callout-output-example.callout {
+  border-left-color: darkgreen;
 }
-div.callout-export.callout-style-default > .callout-header {
-  background-color: rgb(from brown r g b / 13%);
+div.callout-output-example.callout-style-default > .callout-header {
+  background-color: rgb(from darkgreen r g b / 13%);
 }
-div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
-  content: '📤';
+div.callout-output-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-output-example.callout-style-default .callout-icon::before, div.callout-output-example.callout-titled .callout-icon::before {
+  content: '📄';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: purple;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  content: '💭';
+  background-image: none;
+}
+div.callout-prompt-template.callout {
+  border-left-color: indigo;
+}
+div.callout-prompt-template.callout-style-default > .callout-header {
+  background-color: rgb(from indigo r g b / 13%);
+}
+div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
+  content: '📋';
   background-image: none;
 }
 div.callout-caution.callout {
@@ -266,23 +178,124 @@ div.callout-caution.callout-style-default .callout-icon::before, div.callout-cau
   content: '⚠️';
   background-image: none;
 }
-div.callout-pair.callout {
-  border-left-color: forestgreen;
+div.callout-export.callout {
+  border-left-color: brown;
 }
-div.callout-pair.callout-style-default > .callout-header {
-  background-color: rgb(from forestgreen r g b / 13%);
+div.callout-export.callout-style-default > .callout-header {
+  background-color: rgb(from brown r g b / 13%);
 }
-div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
+div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
+  content: '📤';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: steelblue;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgb(from steelblue r g b / 13%);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  content: '💻';
+  background-image: none;
+}
+div.callout-screens-up.callout {
+  border-left-color: green;
+}
+div.callout-screens-up.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
+  content: '🔼';
+  background-image: none;
+}
+div.callout-timing.callout {
+  border-left-color: red;
+}
+div.callout-timing.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
+  content: '⏱️';
+  background-image: none;
+}
+div.callout-testing.callout {
+  border-left-color: green;
+}
+div.callout-testing.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-testing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-testing.callout-style-default .callout-icon::before, div.callout-testing.callout-titled .callout-icon::before {
+  content: '🧪';
+  background-image: none;
+}
+div.callout-screens-down.callout {
+  border-left-color: orange;
+}
+div.callout-screens-down.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
+}
+div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
+  content: '🔽';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: purple;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   content: '👥';
+  background-image: none;
+}
+div.callout-prompt-example.callout {
+  border-left-color: darkblue;
+}
+div.callout-prompt-example.callout-style-default > .callout-header {
+  background-color: rgb(from darkblue r g b / 13%);
+}
+div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
+  content: '👩🏼‍🔧';
+  background-image: none;
+}
+div.callout-try.callout {
+  border-left-color: blue;
+}
+div.callout-try.callout-style-default > .callout-header {
+  background-color: rgb(from blue r g b / 13%);
+}
+div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
+  content: '🔄';
+  background-image: none;
+}
+div.callout-checkpoint.callout {
+  border-left-color: purple;
+}
+div.callout-checkpoint.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-checkpoint .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-checkpoint.callout-titled .callout-icon::before {
+  content: '🎯';
   background-image: none;
 }
 </style>
 
 
 <meta property="og:title" content="Pre-Workshop Instructions – Promptly Educated //">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Promptly Educated //">
 <meta name="twitter:title" content="Pre-Workshop Instructions – Promptly Educated //">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -305,11 +318,6 @@ div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.c
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/pre-workshop.html" aria-current="page"> <i class="bi bi-backpack4" role="img">
-</i> 
-<span class="menu-text">Pre-workshop Setup</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../pages/index.html"> <i class="bi bi-person-workspace" role="img">
 </i> 
 <span class="menu-text">Workshop</span></a>
@@ -327,11 +335,15 @@ div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.c
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/prompt-engineering-basics.html">
- <span class="dropdown-text">Prompt engineering: basics</span></a>
+ <span class="dropdown-text">Prompt Engineering: Basics</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/prompt-engineering-intermediate.html">
- <span class="dropdown-text">Prompt engineering: intermediate</span></a>
+ <span class="dropdown-text">Prompt Engineering: Intermediate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/llms-in-education.html">
+ <span class="dropdown-text">Large Language Models in Education</span></a>
   </li>  
     </ul>
   </li>
@@ -347,8 +359,12 @@ div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.c
  <span class="dropdown-text">Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/tools.html">
- <span class="dropdown-text">Tools</span></a>
+    <a class="dropdown-item" href="../assets/pdfs/Begleitdokument.pdf">
+ <span class="dropdown-text">KI in der Lehre: Begleitdokument</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assets/pdfs/2024-10-24_KI-Intermediate.pdf">
+ <span class="dropdown-text">KI in der Lehre: Einführung</span></a>
   </li>  
     </ul>
   </li>
@@ -384,13 +400,8 @@ div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.c
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#chatbot-accounts" id="toc-chatbot-accounts" class="nav-link active" data-scroll-target="#chatbot-accounts">Chatbot accounts</a>
-  <ul class="collapse">
-  <li><a href="#claude" id="toc-claude" class="nav-link" data-scroll-target="#claude">Claude</a></li>
-  <li><a href="#chatgpt" id="toc-chatgpt" class="nav-link" data-scroll-target="#chatgpt">ChatGPT</a></li>
-  <li><a href="#huggingchat" id="toc-huggingchat" class="nav-link" data-scroll-target="#huggingchat">HuggingChat</a></li>
-  </ul></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -416,20 +427,44 @@ div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.c
 </header>
 
 
-<section id="chatbot-accounts" class="level1">
-<h1>Chatbot accounts</h1>
-<section id="claude" class="level2">
-<h2 class="anchored" data-anchor-id="claude">Claude</h2>
-</section>
-<section id="chatgpt" class="level2">
-<h2 class="anchored" data-anchor-id="chatgpt">ChatGPT</h2>
-</section>
-<section id="huggingchat" class="level2">
-<h2 class="anchored" data-anchor-id="huggingchat">HuggingChat</h2>
-</section>
-</section>
+<p>In this workshop, I recommend working with the following chatbots:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Chatbot</th>
+<th>Description</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://claude.ai/">Claude</a></td>
+<td>Considered by many to be using the best LLMs for a variety of tasks, such as coding and general-purpose writing.</td>
+<td>Artifacts (output in a single document), displays HTML</td>
+</tr>
+<tr class="even">
+<td><a href="https://chatgpt.com">ChatGPT</a></td>
+<td>The most popular chatbot, generally good for coding and writing. Its latest models are claimed to perform very well on reasoning tasks.</td>
+<td>Web access, GPTs, Python code execution, Canvas</td>
+</tr>
+<tr class="odd">
+<td><a href="https://huggingface.co/chat/">HuggingChat</a></td>
+<td>A chatbot that allows you to use a variety of different open-source LLMs, such as those based on Llama. It’s free, but you need to create an account.</td>
+<td>Web search, Assistants</td>
+</tr>
+</tbody>
+</table>
 <section id="preparation" class="level1">
 <h1>Preparation</h1>
+<p>You will need to create an account on each of these platforms. For Claude and ChatGPT, you will have to use your mobile number to verify your account.</p>
+</section>
+<section id="additional-resources" class="level1">
+<h1>Additional Resources</h1>
+<ul>
+<li><a href="https://www.anthropic.com/claude">Official Claude Documentation</a></li>
+<li><a href="https://platform.openai.com/docs/guides/chat">ChatGPT Documentation</a></li>
+<li><a href="https://huggingface.co/docs/hub/index">HuggingFace Documentation</a></li>
+</ul>
 
 
 </section>

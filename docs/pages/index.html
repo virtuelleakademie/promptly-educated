@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -82,92 +102,15 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-export.callout {
-  border-left-color: brown;
-}
-div.callout-export.callout-style-default > .callout-header {
-  background-color: rgb(from brown r g b / 13%);
-}
-div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
-  content: '📤';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: purple;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  content: '💭';
-  background-image: none;
-}
-div.callout-break.callout {
-  border-left-color: brown;
-}
-div.callout-break.callout-style-default > .callout-header {
-  background-color: rgb(from brown r g b / 13%);
-}
-div.callout-break .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-break.callout-style-default .callout-icon::before, div.callout-break.callout-titled .callout-icon::before {
-  content: '☕';
-  background-image: none;
-}
-div.callout-pair.callout {
-  border-left-color: forestgreen;
-}
-div.callout-pair.callout-style-default > .callout-header {
-  background-color: rgb(from forestgreen r g b / 13%);
-}
-div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
-  content: '👥';
-  background-image: none;
-}
-div.callout-screens-up.callout {
-  border-left-color: green;
-}
-div.callout-screens-up.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
-  content: '🔼';
-  background-image: none;
-}
-div.callout-try.callout {
-  border-left-color: blue;
-}
-div.callout-try.callout-style-default > .callout-header {
-  background-color: rgb(from blue r g b / 13%);
-}
-div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
-  content: '🔄';
-  background-image: none;
-}
-div.callout-prompt-template.callout {
-  border-left-color: indigo;
-}
-div.callout-prompt-template.callout-style-default > .callout-header {
-  background-color: rgb(from indigo r g b / 13%);
-}
-div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
-  content: '📋';
-  background-image: none;
-}
-div.callout-screens-down.callout {
+div.callout-caution.callout {
   border-left-color: orange;
 }
-div.callout-screens-down.callout-style-default > .callout-header {
+div.callout-caution.callout-style-default > .callout-header {
   background-color: rgb(from orange r g b / 13%);
 }
-div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
-  content: '🔽';
+div.callout-caution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-caution.callout-style-default .callout-icon::before, div.callout-caution.callout-titled .callout-icon::before {
+  content: '⚠️';
   background-image: none;
 }
 div.callout-testing.callout {
@@ -181,37 +124,15 @@ div.callout-testing.callout-style-default .callout-icon::before, div.callout-tes
   content: '🧪';
   background-image: none;
 }
-div.callout-individual.callout {
-  border-left-color: steelblue;
+div.callout-screens-down.callout {
+  border-left-color: orange;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
+div.callout-screens-down.callout-style-default > .callout-header {
+  background-color: rgb(from orange r g b / 13%);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  content: '💻';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: purple;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  content: '👥';
-  background-image: none;
-}
-div.callout-timing.callout {
-  border-left-color: red;
-}
-div.callout-timing.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
-  content: '⏱️';
+div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
+  content: '🔽';
   background-image: none;
 }
 div.callout-tip.callout {
@@ -225,6 +146,28 @@ div.callout-tip.callout-style-default .callout-icon::before, div.callout-tip.cal
   content: '💡';
   background-image: none;
 }
+div.callout-pair.callout {
+  border-left-color: forestgreen;
+}
+div.callout-pair.callout-style-default > .callout-header {
+  background-color: rgb(from forestgreen r g b / 13%);
+}
+div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
+  content: '👥';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: purple;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  content: '💭';
+  background-image: none;
+}
 div.callout-feedback.callout {
   border-left-color: teal;
 }
@@ -236,15 +179,26 @@ div.callout-feedback.callout-style-default .callout-icon::before, div.callout-fe
   content: '📝';
   background-image: none;
 }
-div.callout-caution.callout {
-  border-left-color: orange;
+div.callout-output-example.callout {
+  border-left-color: darkgreen;
 }
-div.callout-caution.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
+div.callout-output-example.callout-style-default > .callout-header {
+  background-color: rgb(from darkgreen r g b / 13%);
 }
-div.callout-caution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-caution.callout-style-default .callout-icon::before, div.callout-caution.callout-titled .callout-icon::before {
-  content: '⚠️';
+div.callout-output-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-output-example.callout-style-default .callout-icon::before, div.callout-output-example.callout-titled .callout-icon::before {
+  content: '📄';
+  background-image: none;
+}
+div.callout-screens-up.callout {
+  border-left-color: green;
+}
+div.callout-screens-up.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
+  content: '🔼';
   background-image: none;
 }
 div.callout-setup.callout {
@@ -258,6 +212,61 @@ div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup
   content: '⚙️';
   background-image: none;
 }
+div.callout-prompt-example.callout {
+  border-left-color: darkblue;
+}
+div.callout-prompt-example.callout-style-default > .callout-header {
+  background-color: rgb(from darkblue r g b / 13%);
+}
+div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
+  content: '👩🏼‍🔧';
+  background-image: none;
+}
+div.callout-timing.callout {
+  border-left-color: red;
+}
+div.callout-timing.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
+  content: '⏱️';
+  background-image: none;
+}
+div.callout-prompt-template.callout {
+  border-left-color: indigo;
+}
+div.callout-prompt-template.callout-style-default > .callout-header {
+  background-color: rgb(from indigo r g b / 13%);
+}
+div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
+  content: '📋';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: steelblue;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgb(from steelblue r g b / 13%);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  content: '💻';
+  background-image: none;
+}
+div.callout-break.callout {
+  border-left-color: brown;
+}
+div.callout-break.callout-style-default > .callout-header {
+  background-color: rgb(from brown r g b / 13%);
+}
+div.callout-break .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-break.callout-style-default .callout-icon::before, div.callout-break.callout-titled .callout-icon::before {
+  content: '☕';
+  background-image: none;
+}
 div.callout-checkpoint.callout {
   border-left-color: purple;
 }
@@ -269,15 +278,37 @@ div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-
   content: '🎯';
   background-image: none;
 }
-div.callout-prompt-example.callout {
-  border-left-color: darkblue;
+div.callout-try.callout {
+  border-left-color: blue;
 }
-div.callout-prompt-example.callout-style-default > .callout-header {
-  background-color: rgb(from darkblue r g b / 13%);
+div.callout-try.callout-style-default > .callout-header {
+  background-color: rgb(from blue r g b / 13%);
 }
-div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
-div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
-  content: '🤖';
+div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
+  content: '🔄';
+  background-image: none;
+}
+div.callout-export.callout {
+  border-left-color: brown;
+}
+div.callout-export.callout-style-default > .callout-header {
+  background-color: rgb(from brown r g b / 13%);
+}
+div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
+  content: '📤';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: purple;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  content: '👥';
   background-image: none;
 }
 </style>
@@ -320,11 +351,6 @@ div.callout-prompt-example.callout-style-default .callout-icon::before, div.call
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pages/pre-workshop.html"> <i class="bi bi-backpack4" role="img">
-</i> 
-<span class="menu-text">Pre-workshop Setup</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../pages/index.html" aria-current="page"> <i class="bi bi-person-workspace" role="img">
 </i> 
 <span class="menu-text">Workshop</span></a>
@@ -342,11 +368,15 @@ div.callout-prompt-example.callout-style-default .callout-icon::before, div.call
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/prompt-engineering-basics.html">
- <span class="dropdown-text">Prompt engineering: basics</span></a>
+ <span class="dropdown-text">Prompt Engineering: Basics</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/prompt-engineering-intermediate.html">
- <span class="dropdown-text">Prompt engineering: intermediate</span></a>
+ <span class="dropdown-text">Prompt Engineering: Intermediate</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/llms-in-education.html">
+ <span class="dropdown-text">Large Language Models in Education</span></a>
   </li>  
     </ul>
   </li>
@@ -362,8 +392,12 @@ div.callout-prompt-example.callout-style-default .callout-icon::before, div.call
  <span class="dropdown-text">Guides</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/tools.html">
- <span class="dropdown-text">Tools</span></a>
+    <a class="dropdown-item" href="../assets/pdfs/Begleitdokument.pdf">
+ <span class="dropdown-text">KI in der Lehre: Begleitdokument</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../assets/pdfs/2024-10-24_KI-Intermediate.pdf">
+ <span class="dropdown-text">KI in der Lehre: Einführung</span></a>
   </li>  
     </ul>
   </li>
@@ -402,45 +436,35 @@ div.callout-prompt-example.callout-style-default .callout-icon::before, div.call
   <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
   <li><a href="#opening-block-15-min" id="toc-opening-block-15-min" class="nav-link" data-scroll-target="#opening-block-15-min">Opening Block (15 min)</a>
   <ul class="collapse">
-  <li><a href="#opening-activity-llm-prediction-challenge" id="toc-opening-activity-llm-prediction-challenge" class="nav-link" data-scroll-target="#opening-activity-llm-prediction-challenge">Opening Activity: LLM Prediction Challenge</a></li>
-  <li><a href="#understanding-large-language-models-llms" id="toc-understanding-large-language-models-llms" class="nav-link" data-scroll-target="#understanding-large-language-models-llms">Understanding Large Language Models (LLMs)</a></li>
+  <li><a href="#opening-activity-the-wolf-goat-and-cabbage-problem-10-min" id="toc-opening-activity-the-wolf-goat-and-cabbage-problem-10-min" class="nav-link" data-scroll-target="#opening-activity-the-wolf-goat-and-cabbage-problem-10-min">Opening Activity: The Wolf, Goat, and Cabbage Problem (10 min)</a></li>
   </ul></li>
   <li><a href="#foundation-block-45-min" id="toc-foundation-block-45-min" class="nav-link" data-scroll-target="#foundation-block-45-min">Foundation Block (45 min)</a>
   <ul class="collapse">
+  <li><a href="#understanding-large-language-models-llms" id="toc-understanding-large-language-models-llms" class="nav-link" data-scroll-target="#understanding-large-language-models-llms">Understanding Large Language Models (LLMs)</a></li>
   <li><a href="#prompt-engineering-basics" id="toc-prompt-engineering-basics" class="nav-link" data-scroll-target="#prompt-engineering-basics">Prompt Engineering Basics</a></li>
   <li><a href="#progressive-revelation-activity" id="toc-progressive-revelation-activity" class="nav-link" data-scroll-target="#progressive-revelation-activity">Progressive Revelation Activity</a></li>
-  <li><a href="#prompt-detective-exercise" id="toc-prompt-detective-exercise" class="nav-link" data-scroll-target="#prompt-detective-exercise">Prompt Detective Exercise</a></li>
+  <li><a href="#prompt-reverse-engineering-exercise" id="toc-prompt-reverse-engineering-exercise" class="nav-link" data-scroll-target="#prompt-reverse-engineering-exercise">Prompt Reverse-Engineering Exercise</a>
+  <ul class="collapse">
+  <li><a href="#output-1" id="toc-output-1" class="nav-link" data-scroll-target="#output-1">Output 1:</a></li>
+  <li><a href="#output-2" id="toc-output-2" class="nav-link" data-scroll-target="#output-2">Output 2:</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#break-15-min" id="toc-break-15-min" class="nav-link" data-scroll-target="#break-15-min">Break (15 min)</a></li>
   <li><a href="#intermediate-block-45-min" id="toc-intermediate-block-45-min" class="nav-link" data-scroll-target="#intermediate-block-45-min">Intermediate Block (45 min)</a>
   <ul class="collapse">
-  <li><a href="#intermediate-techniques" id="toc-intermediate-techniques" class="nav-link" data-scroll-target="#intermediate-techniques">Intermediate Techniques</a></li>
+  <li><a href="#prompt-engineering-intermediate-techniques" id="toc-prompt-engineering-intermediate-techniques" class="nav-link" data-scroll-target="#prompt-engineering-intermediate-techniques">Prompt Engineering Intermediate Techniques</a></li>
   <li><a href="#error-first-learning-activity" id="toc-error-first-learning-activity" class="nav-link" data-scroll-target="#error-first-learning-activity">Error-First Learning Activity</a></li>
   <li><a href="#prompt-surgery-workshop" id="toc-prompt-surgery-workshop" class="nav-link" data-scroll-target="#prompt-surgery-workshop">Prompt Surgery Workshop</a></li>
   </ul></li>
-  <li><a href="#implementation-block-45-min" id="toc-implementation-block-45-min" class="nav-link" data-scroll-target="#implementation-block-45-min">Implementation Block (45 min)</a>
+  <li><a href="#implementation-block-30-min" id="toc-implementation-block-30-min" class="nav-link" data-scroll-target="#implementation-block-30-min">Implementation Block (30 min)</a>
   <ul class="collapse">
   <li><a href="#anki-flashcard-project" id="toc-anki-flashcard-project" class="nav-link" data-scroll-target="#anki-flashcard-project">Anki Flashcard Project</a></li>
   </ul></li>
-  <li><a href="#closing-block-15-min" id="toc-closing-block-15-min" class="nav-link" data-scroll-target="#closing-block-15-min">Closing Block (15 min)</a>
+  <li><a href="#closing-block-30-min" id="toc-closing-block-30-min" class="nav-link" data-scroll-target="#closing-block-30-min">Closing Block (30 min)</a>
   <ul class="collapse">
-  <li><a href="#teaching-scenario-planning" id="toc-teaching-scenario-planning" class="nav-link" data-scroll-target="#teaching-scenario-planning">Teaching Scenario Planning</a></li>
+  <li><a href="#optional-ai-and-learning-environments" id="toc-optional-ai-and-learning-environments" class="nav-link" data-scroll-target="#optional-ai-and-learning-environments">Optional AI and learning environments</a></li>
   <li><a href="#final-wrap-up" id="toc-final-wrap-up" class="nav-link" data-scroll-target="#final-wrap-up">Final Wrap-Up</a></li>
   </ul></li>
-  <li><a href="#prompting" id="toc-prompting" class="nav-link" data-scroll-target="#prompting">Prompting</a>
-  <ul class="collapse">
-  <li><a href="#general-tips" id="toc-general-tips" class="nav-link" data-scroll-target="#general-tips">General tips</a>
-  <ul class="collapse">
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
-  </ul></li>
-  <li><a href="#structured-prompting-techniques" id="toc-structured-prompting-techniques" class="nav-link" data-scroll-target="#structured-prompting-techniques">Structured prompting techniques</a>
-  <ul class="collapse">
-  <li><a href="#in-context-learning-provide-examples-within-the-prompt" id="toc-in-context-learning-provide-examples-within-the-prompt" class="nav-link" data-scroll-target="#in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</a></li>
-  <li><a href="#thought-generation-instruct-the-model-to-think-step-by-step" id="toc-thought-generation-instruct-the-model-to-think-step-by-step" class="nav-link" data-scroll-target="#thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</a></li>
-  <li><a href="#decomposition-techniques-break-down-tasks-into-subtasks" id="toc-decomposition-techniques-break-down-tasks-into-subtasks" class="nav-link" data-scroll-target="#decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#exercise-essay-writing" id="toc-exercise-essay-writing" class="nav-link" data-scroll-target="#exercise-essay-writing">Exercise: Essay writing</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   </ul>
 </nav>
@@ -493,6 +517,60 @@ div.callout-prompt-example.callout-style-default .callout-icon::before, div.call
 </header>
 
 
+<div class="callout callout-style-default callout-setup callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pre-Workshop Setup
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In this workshop, I recommend working with the following chatbots:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Chatbot</th>
+<th>Description</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://claude.ai/">Claude</a></td>
+<td>Considered by many to be using the best LLMs for a variety of tasks, such as coding and general-purpose writing.</td>
+<td>Artifacts (output in a single document), displays HTML, upload files</td>
+</tr>
+<tr class="even">
+<td><a href="https://chatgpt.com">ChatGPT</a></td>
+<td>The most popular chatbot, generally good for coding and writing. Its latest models are claimed to perform very well on reasoning tasks.</td>
+<td>Web access, GPTs, Python code execution, Canvas, upload files</td>
+</tr>
+<tr class="odd">
+<td><a href="https://huggingface.co/chat/">HuggingChat</a></td>
+<td>A chatbot that allows you to use a variety of different open-source LLMs, such as those based on Llama. It’s free, but you need to create an account.</td>
+<td>Web search, Assistants</td>
+</tr>
+</tbody>
+</table>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
+<p>You will need to create an account on each of these platforms. For Claude and ChatGPT, you will have to use your mobile number to verify your account.</p>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://www.anthropic.com/claude">Official Claude Documentation</a></li>
+<li><a href="https://platform.openai.com/docs/guides/chat">ChatGPT Documentation</a></li>
+<li><a href="https://huggingface.co/docs/hub/index">HuggingFace Documentation</a></li>
+</ul>
+</section>
+</div>
+</div>
+</div>
 <section id="workshop-overview" class="level1">
 <h1>Workshop Overview</h1>
 <p>The workshop is divided into several blocks, each focusing on different aspects of LLM usage and prompt engineering. Here’s a brief overview of the structure:</p>
@@ -512,8 +590,8 @@ Time Check
 <li>Foundations Block (45 min)</li>
 <li>Break (15 min)</li>
 <li>Intermediate Block (45 min)</li>
-<li>Implementation Block (45 min)</li>
-<li>Closing (15 min)</li>
+<li>Implementation Block (20 min)</li>
+<li>Closing Block (30 min)</li>
 </ul>
 </section>
 </div>
@@ -521,7 +599,7 @@ Time Check
 <section id="opening-block-15-min" class="level1">
 <h1>Opening Block (15 min)</h1>
 <div class="callout callout-style-default callout-setup callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -530,39 +608,87 @@ Technical Setup
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <section id="initial-setup-5-min" class="level3 callout-body-container callout-body">
 <h3 class="anchored" data-anchor-id="initial-setup-5-min">Initial Setup (5 min)</h3>
 <ul>
-<li>Login to LLM platform</li>
+<li>Login to LLM platforms</li>
 <li>Test access</li>
 <li>Quick troubleshooting</li>
 </ul>
 </section>
 </div>
 </div>
-<section id="opening-activity-llm-prediction-challenge" class="level2">
-<h2 class="anchored" data-anchor-id="opening-activity-llm-prediction-challenge">Opening Activity: LLM Prediction Challenge</h2>
-<div class="callout callout-style-default callout-screens-down callout-titled">
+<section id="opening-activity-the-wolf-goat-and-cabbage-problem-10-min" class="level2">
+<h2 class="anchored" data-anchor-id="opening-activity-the-wolf-goat-and-cabbage-problem-10-min">Opening Activity: The Wolf, Goat, and Cabbage Problem (10 min)</h2>
+<div class="callout callout-style-default callout-try callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Group Discussion
+Hands-On Practice
 </div>
 </div>
-<section id="llm-prediction-challenge-10-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="llm-prediction-challenge-10-min">LLM Prediction Challenge (10 min)</h3>
+<div class="callout-body-container callout-body">
+<p>Enter the following prompt:</p>
+<p>A farmer needs to transport a wolf, a goat, and a cabbage across a river using a small boat. The boat can carry only the farmer and one other item (either the wolf, the goat, or the cabbage) at a time. However, if left together without the farmer’s supervision: The wolf will eat the goat, and the goat will eat the cabbage. The challenge is to figure out how the farmer can get all three items across the river safely.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Individual Practice
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li>Display 3 surprising LLM outputs</li>
-<li>Group discussion: What prompts created these?</li>
-<li>Collect hypotheses</li>
-<li>Reveal actual prompts</li>
+<li>Can you solve this task?</li>
+<li>Can the LLM solve this task?</li>
+<li>If not, why not?</li>
 </ol>
-</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-pair callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+In pairs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Discuss the output of the LLM</li>
+<li>Share your thoughts</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+In groups
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Based on your current knowledge of LLMs, what do you think is the problem?</li>
+<li>How could we modify the task description to make it easier for the LLM?</li>
+<li>What does this say about the capabilities of LLMs?</li>
+</ul>
+</div>
 </div>
 </section>
+</section>
+<section id="foundation-block-45-min" class="level1">
+<h1>Foundation Block (45 min)</h1>
 <section id="understanding-large-language-models-llms" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-large-language-models-llms">Understanding Large Language Models (LLMs)</h2>
     <p><a href="../slides/understanding-llms.html" target="_blank">View slides in full screen</a></p>
@@ -571,9 +697,6 @@ Group Discussion
     </div>
   
 </section>
-</section>
-<section id="foundation-block-45-min" class="level1">
-<h1>Foundation Block (45 min)</h1>
 <section id="prompt-engineering-basics" class="level2">
 <h2 class="anchored" data-anchor-id="prompt-engineering-basics">Prompt Engineering Basics</h2>
     <p><a href="../slides/prompt-engineering-basics.html" target="_blank">View slides in full screen</a></p>
@@ -605,29 +728,252 @@ Hands-On Practice
 </ol>
 </section>
 </div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step 1: Start with a basic prompt
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<section id="step-1-start-with-a-basic-prompt" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="step-1-start-with-a-basic-prompt">Step 1: Start with a basic prompt</h2>
+<p>Prompt: Write a short story about a person who finds a magic lamp.</p>
 </section>
-<section id="prompt-detective-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="prompt-detective-exercise">Prompt Detective Exercise</h2>
-<div class="callout callout-style-default callout-group callout-titled">
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step 2: Add role specification
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<section id="step-2-add-role-specification" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="step-2-add-role-specification">Step 2: Add role specification</h2>
+<p>Prompt: You are a professional fiction writer. Write a short story about a person who finds a magic lamp.</p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step 3: Add context details
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<section id="step-3-add-context-details" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="step-3-add-context-details">Step 3: Add context details</h2>
+<p>Prompt: You are a professional fiction writer. Write a short story (around 300 words) about a young woman named Sarah who finds an old, tarnished magic lamp while cleaning out her grandmother’s attic. The story should be set in a modern, urban setting.</p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step 4: Add output formatting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<section id="step-4-add-output-formatting" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="step-4-add-output-formatting">Step 4: Add output formatting</h2>
+<p>Prompt: You are a professional fiction writer. Write a short story (around 300 words) about a young woman named Sarah who finds an old, tarnished magic lamp while cleaning out her grandmother’s attic. The story should be set in a modern, urban setting. Format your response using Markdown, with a title and proper paragraphs.</p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Step 5: Compare results at each stage
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<section id="step-5-compare-results-at-each-stage" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="step-5-compare-results-at-each-stage">Step 5: Compare results at each stage</h2>
+<ul>
+<li>How does the output change at each stage?</li>
+<li>What effect does each change have?</li>
+</ul>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-pair callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Group Work
+In pairs
 </div>
 </div>
-<section id="prompt-detective-exercise-15-min" class="level2 callout-body-container callout-body">
-<h2 class="anchored" data-anchor-id="prompt-detective-exercise-15-min">Prompt Detective Exercise (15 min)</h2>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Share your thoughts with your neighbour</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="prompt-reverse-engineering-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-reverse-engineering-exercise">Prompt Reverse-Engineering Exercise</h2>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompt Detective Exercise (15 min)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- ## Prompt Detective Exercise (15 min) -->
 <ol type="1">
-<li>Groups receive successful outputs</li>
-<li>Try to reconstruct prompts</li>
-<li>Test their versions</li>
-<li>Compare with original</li>
-<li>Discuss differences</li>
+<li>Examine the outputs below and try to reconstruct the prompt that could have generated it.</li>
+<li>Test your prompt with the LLM and compare the output to the original.</li>
+</ol>
+</div>
+</div>
+<section id="output-1" class="level3">
+<h3 class="anchored" data-anchor-id="output-1">Output 1:</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Symbol</th>
+<th>Atomic Number</th>
+<th>Atomic Mass</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>H</td>
+<td>1</td>
+<td>1.008</td>
+</tr>
+<tr class="even">
+<td>Helium</td>
+<td>He</td>
+<td>2</td>
+<td>4.003</td>
+</tr>
+<tr class="odd">
+<td>Lithium</td>
+<td>Li</td>
+<td>3</td>
+<td>6.941</td>
+</tr>
+<tr class="even">
+<td>Beryllium</td>
+<td>Be</td>
+<td>4</td>
+<td>9.012</td>
+</tr>
+<tr class="odd">
+<td>Boron</td>
+<td>B</td>
+<td>5</td>
+<td>10.811</td>
+</tr>
+<tr class="even">
+<td>Carbon</td>
+<td>C</td>
+<td>6</td>
+<td>12.011</td>
+</tr>
+</tbody>
+</table>
+<p>:::</p>
+</section>
+<section id="output-2" class="level3">
+<h3 class="anchored" data-anchor-id="output-2">Output 2:</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 34%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Greek Letter</th>
+<th>Pronunciation</th>
+<th>Example Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>α (alpha)</td>
+<td>al-fah</td>
+<td>Used to represent the first letter of the Greek alphabet, or the first in a series.</td>
+</tr>
+<tr class="even">
+<td>β (beta)</td>
+<td>bay-tah</td>
+<td>Used in mathematics and science to represent various constants or coefficients.</td>
+</tr>
+<tr class="odd">
+<td>γ (gamma)</td>
+<td>gam-ah</td>
+<td>Used in physics to represent the ratio of two quantities, or in mathematics as a function.</td>
+</tr>
+<tr class="even">
+<td>δ (delta)</td>
+<td>del-tah</td>
+<td>Used to represent a change or difference in a quantity, or as a symbol for a small increment.</td>
+</tr>
+<tr class="odd">
+<td>ε (epsilon)</td>
+<td>ep-si-lon</td>
+<td>Used in mathematics to represent a small positive number, or in engineering to represent strain.</td>
+</tr>
+<tr class="even">
+<td>π (pi)</td>
+<td>pie</td>
+<td>Used to represent the ratio of a circle’s circumference to its diameter, a fundamental constant in mathematics.</td>
+</tr>
+</tbody>
+</table>
+<p>:::</p>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompt Detective Exercise (15 min)
+</div>
+</div>
+<section id="your-task" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="your-task">Your Task:</h3>
+<ol type="1">
+<li>Discuss with your group:
+<ul>
+<li>What elements did you include in your prompt?</li>
+<li>How did your output differ from the original?</li>
+<li>What changes could you make to your prompt to better match the desired output?</li>
+</ul></li>
 </ol>
 </section>
 </div>
+</section>
 </section>
 </section>
 <section id="break-15-min" class="level1">
@@ -641,11 +987,9 @@ Group Work
 Break Time
 </div>
 </div>
-<section id="break-15-min-1" class="level2 callout-body-container callout-body">
-<h2 class="anchored" data-anchor-id="break-15-min-1">Break (15 min)</h2>
+<section id="coffee-break" class="level2 callout-body-container callout-body">
+<h2 class="anchored" data-anchor-id="coffee-break">Coffee Break</h2>
 <ul>
-<li>Movement encouraged</li>
-<li>Optional experiments displayed</li>
 <li>Technical support available</li>
 </ul>
 </section>
@@ -653,8 +997,8 @@ Break Time
 </section>
 <section id="intermediate-block-45-min" class="level1">
 <h1>Intermediate Block (45 min)</h1>
-<section id="intermediate-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="intermediate-techniques">Intermediate Techniques</h2>
+<section id="prompt-engineering-intermediate-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-engineering-intermediate-techniques">Prompt Engineering Intermediate Techniques</h2>
     <p><a href="../slides/prompt-engineering-intermediate.html" target="_blank">View slides in full screen</a></p>
        <div class="ratio ratio-16x9">
       <iframe class="slide-deck" src="../slides/prompt-engineering-intermediate.html" height="500px"></iframe>
@@ -674,17 +1018,148 @@ Learning from Mistakes
 </div>
 <section id="error-first-learning-activity-20-min" class="level3 callout-body-container callout-body">
 <h3 class="anchored" data-anchor-id="error-first-learning-activity-20-min">Error-First Learning Activity (20 min)</h3>
-<ol type="1">
-<li>Present common error scenarios:
+<p>Upload a research paper (ChatGPT or Claude)</p>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vague instructions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Write a summary of the following research paper.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potential improvements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Potential improvements:</p>
 <ul>
-<li>Vague instructions</li>
-<li>Missing context</li>
-<li>Poor formatting</li>
-</ul></li>
-<li>Groups attempt fixes</li>
-<li>Test solutions</li>
-<li>Document improvements</li>
-</ol>
+<li>Specify what should be summarized (e.g.&nbsp;a book, article, etc.)</li>
+<li>Provide context about the topic or content</li>
+<li>Give guidance on the desired length or format of the summary</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Missing Context
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Prompt: Explain the concept of “machine learning” to an audience.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potential improvements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Potential improvements:</p>
+<ul>
+<li>Background information about the audience (e.g.&nbsp;technical expertise, age group, etc.)</li>
+<li>Desired level of technical depth or terminology</li>
+<li>Expected length or format of the explanation</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Poor Formatting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Prompt: Provide a table with information about the first 10 elements of the periodic table, including their symbols, atomic numbers, and atomic masses.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potential improvements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Potential improvements:</p>
+<ul>
+<li>Specify the desired output format (e.g.&nbsp;table, bullet points, etc.)</li>
+<li>Clarify the order and arrangement of information</li>
+<li>Indicate any additional details needed (e.g.&nbsp;units, descriptions, etc.)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-individual callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Individual Practice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Attempt fixes</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discuss fixes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Discuss fixes with your group</li>
+</ul>
+</div>
+</div>
 </section>
 </div>
 </section>
@@ -699,10 +1174,10 @@ Learning from Mistakes
 Collaborative Analysis
 </div>
 </div>
-<section id="prompt-surgery-workshop-25-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="prompt-surgery-workshop-25-min">Prompt Surgery Workshop (25 min)</h3>
+<section id="reducing-hallucinations-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="reducing-hallucinations-10-min">Reducing hallucinations (10 min)</h3>
 <ol type="1">
-<li>Examine problematic prompts</li>
+<li>Examine problematic prompt</li>
 <li>Diagnose issues</li>
 <li>Apply fixes</li>
 <li>Test and refine</li>
@@ -710,12 +1185,177 @@ Collaborative Analysis
 </ol>
 </section>
 </div>
+<div class="callout callout-style-default callout-prompt-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Summarize research
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Prompt: Summarize key findings on the development of metacognition and self-regulated learning strategies in children.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-output-example callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<section id="key-findings-on-the-development-of-metacognition-and-self-regulated-learning-srl-strategies-in-children" class="level1 callout-body-container callout-body">
+<h1>Key Findings on the Development of Metacognition and Self-Regulated Learning (SRL) Strategies in Children</h1>
+<section id="emergence-of-metacognition" class="level2">
+<h2 class="anchored" data-anchor-id="emergence-of-metacognition">1. Emergence of Metacognition</h2>
+<ul>
+<li><strong>Early Development</strong>: Metacognitive skills, such as the ability to monitor one’s own thinking and regulate learning, begin to emerge in early childhood. Children as young as 3-5 years old show some capacity for metacognitive thinking, though it is rudimentary.</li>
+<li><strong>Growth During School Years</strong>: Between ages 7 and 12, children significantly improve their metacognitive skills, particularly their ability to reflect on their thinking and adjust learning strategies. This period marks the transition from implicit, intuitive metacognition to more explicit forms.</li>
+<li><strong>Continued Development into Adolescence</strong>: Adolescents show greater sophistication in planning, monitoring, and evaluating their learning, reflecting the continued maturation of executive functions and cognitive control.</li>
+</ul>
+</section>
+<section id="components-of-self-regulated-learning" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-self-regulated-learning">2. Components of Self-Regulated Learning</h2>
+<ul>
+<li><strong>Planning</strong>: The ability to set goals and plan learning strategies develops with age. Young children often need external guidance, but by late elementary school, they begin to adopt more autonomous strategies for planning their work.</li>
+<li><strong>Monitoring and Evaluation</strong>: Young children struggle to accurately monitor their learning progress, often overestimating their understanding or skills. As they grow older, they become more accurate in assessing their learning, which is crucial for self-correction and improvement.</li>
+<li><strong>Control of Learning Strategies</strong>: Children initially rely on simple strategies, such as repetition. Over time, they learn to apply more sophisticated strategies (e.g., elaboration, summarization), and they become more flexible in selecting strategies suited to different tasks.</li>
+</ul>
+</section>
+<section id="influences-on-development" class="level2">
+<h2 class="anchored" data-anchor-id="influences-on-development">3. Influences on Development</h2>
+<ul>
+<li><strong>Cognitive Maturity</strong>: The development of executive functions, such as working memory and cognitive flexibility, plays a vital role in enhancing metacognition and self-regulated learning skills.</li>
+<li><strong>Social and Environmental Factors</strong>: Teachers, parents, and peers provide models and feedback that shape children’s development of metacognitive and SRL strategies. Scaffolding and direct instruction from adults are especially helpful in the early stages.</li>
+<li><strong>Task Complexity and Experience</strong>: Exposure to a variety of tasks, particularly those that challenge children’s cognitive limits, fosters the development of metacognitive strategies. Success in tasks requiring problem-solving or critical thinking accelerates metacognitive growth.</li>
+</ul>
+</section>
+<section id="challenges-in-metacognitive-development" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-in-metacognitive-development">4. Challenges in Metacognitive Development</h2>
+<ul>
+<li><strong>Overconfidence</strong>: Younger children often exhibit overconfidence in their abilities, underestimating the difficulty of tasks and overestimating their understanding. This diminishes as they gain more experience and feedback.</li>
+<li><strong>Transfer of Skills</strong>: While children may develop metacognitive strategies in specific contexts, transferring these skills to new, unfamiliar situations can be difficult. Explicit teaching and practice in various contexts enhance transferability.</li>
+</ul>
+</section>
+<section id="educational-implications" class="level2">
+<h2 class="anchored" data-anchor-id="educational-implications">5. Educational Implications</h2>
+<ul>
+<li><strong>Instructional Approaches</strong>: Instruction that encourages reflection, self-assessment, and the explicit teaching of learning strategies can accelerate metacognitive and SRL development. For example, teaching students how to set goals, self-monitor, and adjust strategies based on feedback improves their learning outcomes.</li>
+<li><strong>Role of Feedback</strong>: Timely and specific feedback helps children refine their self-assessment skills and encourages them to adjust their learning strategies more effectively.</li>
+<li><strong>Technology and Tools</strong>: Digital tools and adaptive learning platforms that provide real-time feedback and promote self-reflection can be particularly effective in helping children develop metacognitive and SRL skills.</li>
+</ul>
+<p>In summary, the development of metacognition and self-regulated learning strategies is a gradual process that builds on both cognitive maturation and experience. With proper guidance and instruction, children become increasingly capable of managing and directing their own learning effectively.</p>
 </section>
 </section>
-<section id="implementation-block-45-min" class="level1">
-<h1>Implementation Block (45 min)</h1>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potential improvements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Strategies to reduce hallucination include:</p>
+<ol type="1">
+<li>Providing relevant factual context from trusted sources.</li>
+<li>Instructing the LLM to admit when it lacks knowledge about a topic.</li>
+</ol>
+<p>The key is to carefully craft prompts and contexts that guide the LLM towards factual responses and away from hallucinating or making up information.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="implementation-block-30-min" class="level1">
+<h1>Implementation Block (30 min)</h1>
 <section id="anki-flashcard-project" class="level2">
 <h2 class="anchored" data-anchor-id="anki-flashcard-project">Anki Flashcard Project</h2>
+<p>[Anki](https://apps.ankiweb.net/ is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.</p>
+<p>One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.</p>
+<p>However, Anki requires a lot of manual work to create effective flashcards. In this workshop, we will use an LLM to generate the flashcards for us.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Anki Flashcard Project
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>The simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).</p>
+<p>Anki can import flashcards in a variety of formats, including Anki’s native format, but also from a comma-separated values (CSV) file.</p>
+<p>A CSV file is a text file that uses a comma to separate values. Each line of the file is a row, and each row has of one or more columns, separated by commas.</p>
+<p>If we have the following list of terms and definitions:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>term</th>
+<th>definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Metacognition</td>
+<td>“The ability to think about one’s own thinking processes”</td>
+</tr>
+<tr class="even">
+<td>Self-Regulated Learning</td>
+<td>“The process of taking control of and evaluating one’s own learning”</td>
+</tr>
+<tr class="odd">
+<td>Executive Functions</td>
+<td>“Higher-order cognitive processes like working memory and cognitive flexibility”</td>
+</tr>
+<tr class="even">
+<td>Scaffolding</td>
+<td>“Support provided by teachers or peers to help students learn new skills”</td>
+</tr>
+</tbody>
+</table>
+<p>we can save these in a CSV file like this:</p>
+<pre><code>term,definition
+Metacognition,"The ability to think about one's own thinking processes"
+Self-Regulated Learning,"The process of taking control of and evaluating one's own learning"
+Executive Functions,"Higher-order cognitive processes like working memory and cognitive flexibility"
+Scaffolding,"Support provided by teachers or peers to help students learn new skills"</code></pre>
+<p>If we save the contents above in a file called <code>anki-flashcards.csv</code>, we can import them into Anki by selecting the `File -&gt; Import… menu item.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-checkpoint callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Goal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The goal of this project is to create a set of flashcards based on your teaching material, and to save these in a CSV file that can be imported into Anki.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-individual callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -725,11 +1365,11 @@ Collaborative Analysis
 Project Work
 </div>
 </div>
-<section id="anki-flashcard-project---phase-1-15-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="anki-flashcard-project---phase-1-15-min">Anki Flashcard Project - Phase 1 (15 min)</h3>
+<section id="anki-flashcard-project---phase-1-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="anki-flashcard-project---phase-1-10-min">Anki Flashcard Project - Phase 1 (10 min)</h3>
 <ul>
 <li>Select teaching material</li>
-<li>Apply learned techniques</li>
+<li>Apply learned prompting techniques</li>
 <li>Create initial flashcard prompt</li>
 <li>Test and document results</li>
 </ul>
@@ -744,8 +1384,8 @@ Project Work
 Peer Review
 </div>
 </div>
-<section id="group-refinement---phase-2-15-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="group-refinement---phase-2-15-min">Group Refinement - Phase 2 (15 min)</h3>
+<section id="group-refinement---phase-2-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="group-refinement---phase-2-10-min">Group Refinement - Phase 2 (10 min)</h3>
 <ul>
 <li>Form groups of 3-4</li>
 <li>Share and test prompts</li>
@@ -755,52 +1395,37 @@ Peer Review
 </section>
 </div>
 <div class="callout callout-style-default callout-export callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Technical Implementation
+Optional
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
-<section id="export-phase---phase-3-15-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="export-phase---phase-3-15-min">Export Phase - Phase 3 (15 min)</h3>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<section id="export-phase---phase-3-10-min" class="level3 callout-body-container callout-body">
+<h3 class="anchored" data-anchor-id="export-phase---phase-3-10-min">Export Phase - Phase 3 (10 min)</h3>
 <ul>
-<li>Format for Anki import</li>
+<li>Install Anki</li>
 <li>Test import process</li>
 <li>Troubleshoot issues</li>
-<li>Document best practices</li>
 </ul>
 </section>
 </div>
 </div>
 </section>
 </section>
-<section id="closing-block-15-min" class="level1">
-<h1>Closing Block (15 min)</h1>
-<section id="teaching-scenario-planning" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-scenario-planning">Teaching Scenario Planning</h2>
-<div class="callout callout-style-default callout-reflect callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Planning Ahead
-</div>
-</div>
-<section id="teaching-scenario-planning-10-min" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="teaching-scenario-planning-10-min">Teaching Scenario Planning (10 min)</h3>
-<ol type="1">
-<li>Choose specific teaching task</li>
-<li>Design implementation plan</li>
-<li>Note potential challenges</li>
-<li>Identify success metrics</li>
-</ol>
-</section>
-</div>
+<section id="closing-block-30-min" class="level1">
+<h1>Closing Block (30 min)</h1>
+<section id="optional-ai-and-learning-environments" class="level2">
+<h2 class="anchored" data-anchor-id="optional-ai-and-learning-environments">Optional AI and learning environments</h2>
+    <p><a href="../slides/ai-learning-environments.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="../slides/ai-learning-environments.html" height="500px"></iframe>
+    </div>
+  
 </section>
 <section id="final-wrap-up" class="level2">
 <h2 class="anchored" data-anchor-id="final-wrap-up">Final Wrap-Up</h2>
@@ -817,311 +1442,19 @@ Wrap-Up
 <h3 class="anchored" data-anchor-id="final-review-5-min">Final Review (5 min)</h3>
 <ul>
 <li>Key takeaways</li>
-<li>Success strategies</li>
 <li>Next steps</li>
-<li>Resource sharing</li>
 </ul>
 </section>
 </div>
-<!-- -REST OF DOCUMENT -------------------------------------------------------------------------- -->
-<p>Designing effective prompts to instruct LLMs to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><p>In general, it is advisable to improve your prompting strategy by <strong>iterating</strong>.</p></li>
-<li><p>Start with a simple prompt, see what the model generates, and then refine. Repeat this process until you are satisfied with the results.</p></li>
-<li><p>Once you have a good prompt, you can use it in a new chat session - in this way, the “failed” attempts will not be part of the context.</p></li>
-</ul>
-</div>
-</div>
 </section>
-</section>
-<section id="prompting" class="level1">
-<h1>Prompting</h1>
-<!-- [Full Screen](../slides/presentation-1.qmd)
-
-
-
-
-
-```{=html}
-<iframe class="slide-deck" src="../slides/presentation-1.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
-``` -->
-<div class="callout callout-style-default callout-pair callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Pair Work
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Remember to complete this section.</p>
-</div>
-</div>
-</div>
-<div class="thumbs-up" title="That was a hard task!">
-<p>You did a great job completing this task.</p>
-</div>
-<div class="callout callout-style-default callout-checkpoint callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>haha</p>
-</div>
-</div>
-    <p><a href="../slides/prompt-engineering-basics.html" target="_blank">View slides in full screen</a></p>
-       <div class="ratio ratio-16x9">
-      <iframe class="slide-deck" src="../slides/prompt-engineering-basics.html" height="500px"></iframe>
-    </div>
-  
-<section id="general-tips" class="level2">
-<h2 class="anchored" data-anchor-id="general-tips">General tips</h2>
-<p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models. If you need examples, this might be a good place to start.</p>
-<p>The strategies include:</p>
-<ul>
-<li>writing clear instructions</li>
-<li>providing reference texts</li>
-<li>splitting tasks into subtasks</li>
-<li>giving GPT ‘time to think’</li>
-<li>using external tools</li>
-</ul>
-<p>Some general techniques are:</p>
-<ul>
-<li><p><strong>Numbered Steps:</strong>: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.</p></li>
-<li><p><strong>Use delimiters:</strong> To separate various parts of the prompt (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</p></li>
-<li><p><strong>Few-shot prompting:</strong> Provide a few examples for guidance.</p></li>
-</ul>
-<p>Combining these techniques, a template prompt might look like this:</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Template
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Role: who is being simulated?</li>
-<li>Task: what is to be done?</li>
-<li>Steps: what are the steps to complete the task?</li>
-<li>Context: what is the context of the task?</li>
-<li>Goal: what is the goal of the task?</li>
-<li>Format: what is the format of the output? How long should it be?</li>
-</ol>
-</div>
-</div>
-<p>Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.</p>
-<section id="example" class="level3">
-<h3 class="anchored" data-anchor-id="example">Example</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You are an expert on the topic of university education and didactics. Explain the concept of “flipped classroom” to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.</p>
-</div>
-</div>
-<p>Different persona:</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You are 13 year old high school student. Explain the concept of “flipped classroom” to your friends. Use markdown to format your response. Keep you explanation concise and to the point.</p>
-</div>
-</div>
-<p>Ask the model to output a table:</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="structured-prompting-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="structured-prompting-techniques">Structured prompting techniques</h2>
-<section id="in-context-learning-provide-examples-within-the-prompt" class="level3">
-<h3 class="anchored" data-anchor-id="in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</h3>
-<section id="explanation" class="level4">
-<h4 class="anchored" data-anchor-id="explanation">Explanation</h4>
-<p>In-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model’s responses by demonstrating the desired output format or type of information.</p>
-</section>
-<section id="techniques" class="level4">
-<h4 class="anchored" data-anchor-id="techniques">Techniques</h4>
-<ul>
-<li><p><strong>Few-Shot Prompting</strong>: Provide a few examples of the desired output before asking for a new response.</p></li>
-<li><p><strong>Zero-Shot Prompting</strong>: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.</p></li>
-</ul>
-</section>
-<section id="example-1" class="level4">
-<h4 class="anchored" data-anchor-id="example-1">Example</h4>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Few-Shot Prompting:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Summarize the main findings of these research paper abstracts:</p>
-<ol type="1">
-<li><p>Abstract: [Insert first abstract] Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.</p></li>
-<li><p>Abstract: [Insert second abstract] Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.</p></li>
-</ol>
-<p>Now summarize this new abstract: [Insert new abstract to be summarized]</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hands-on Exercise
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Choose a topic you’re interested in. If you would like to use an AI-based tool for literature research, you can use <a href="https://elicit.com/">Elicit</a>.</li>
-<li>Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.</li>
-</ol>
-</div>
-</div>
-</section>
-</section>
-<section id="thought-generation-instruct-the-model-to-think-step-by-step" class="level3">
-<h3 class="anchored" data-anchor-id="thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</h3>
-<section id="explanation-1" class="level4">
-<h4 class="anchored" data-anchor-id="explanation-1">Explanation</h4>
-<p>Thought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.</p>
-</section>
-<section id="techniques-1" class="level4">
-<h4 class="anchored" data-anchor-id="techniques-1">Techniques</h4>
-<p>Chain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.</p>
-<ul>
-<li><strong>Zero-Shot CoT</strong>: Request step-by-step reasoning without providing examples.</li>
-<li><strong>Few-Shot CoT</strong>: Provide examples of step-by-step reasoning before asking for a new response.</li>
-</ul>
-</section>
-<section id="example-prompt-chain-of-thought" class="level4">
-<h4 class="anchored" data-anchor-id="example-prompt-chain-of-thought">Example Prompt (Chain-of-Thought):</h4>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Analyze the methodology of the following research study. Think through this step-by-step: 1. Identify the research design. 2. Evaluate the appropriateness of the chosen methods. 3. Assess potential limitations or biases. 4. Consider alternative approaches that could have been used.</p>
-<p>[Insert methodology section of a research paper]</p>
-</div>
-</div>
-</section>
-</section>
-<section id="decomposition-techniques-break-down-tasks-into-subtasks" class="level3">
-<h3 class="anchored" data-anchor-id="decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</h3>
-<section id="explanation-2" class="level4">
-<h4 class="anchored" data-anchor-id="explanation-2">Explanation</h4>
-<p>Decomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.</p>
-</section>
-<section id="techniques-2" class="level4">
-<h4 class="anchored" data-anchor-id="techniques-2">Techniques</h4>
-<ul>
-<li>Least-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here: <i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intermediate/least_to_most">Least-to-Most Prompting</a></li>
-<li>Plan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.</li>
-</ul>
-</section>
-<section id="example-prompt-plan-and-solve" class="level4">
-<h4 class="anchored" data-anchor-id="example-prompt-plan-and-solve">Example Prompt (Plan-and-Solve):</h4>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We need to conduct a systematic literature review on [specific topic]. Let’s approach this in two phases:</p>
-<p>Planning Phase: 1. Outline the main steps needed for this systematic review. 2. For each step, briefly describe what needs to be considered.</p>
-<p>Solving Phase: Now, let’s address each step in detail, providing specific strategies and methodologies.</p>
-</div>
-</div>
-</section>
-</section>
-</section>
-</section>
-<section id="exercise-essay-writing" class="level1">
-<h1>Exercise: Essay writing</h1>
-<p>The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use the techniques that you have learned so far, including providing reference texts.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI).</li>
-<li>Exchange your essay with your neighbour and provide feedback (using ChatGPT) on the clarity and coherence of the essay.</li>
-</ol>
-</div>
-</div>
 </section>
 <section id="further-resources" class="level1">
 <h1>Further Resources</h1>
-<ol class="example" type="1">
-<li><strong>Explore these prompt guides</strong>. Use ChatGPT to try out new ideas.</li>
-</ol>
+<p><strong>Explore these prompt guides</strong>.</p>
+<p><span class="citation" data-cites="schulhoffPromptReportSystematic2024">Schulhoff et al. (<a href="#ref-schulhoffPromptReportSystematic2024" role="doc-biblioref">2024</a>)</span> provide a comprehensive overview of the current state of prompt engineering.</p>
+<p>The following websites are excellent resources for learning about prompting:</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1130,7 +1463,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></p>
 <iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
@@ -1138,7 +1471,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1147,7 +1480,7 @@ Prompting guide: A more technical guide to prompting
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a>: <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p>
 <iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>
@@ -1163,9 +1496,14 @@ Prompting guide: A more technical guide to prompting
 ::: -->
 
 
+
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-schulhoffPromptReportSystematic2024" class="csl-entry" role="listitem">
+Schulhoff, Sander, Michael Ilie, Nishant Balepur, Konstantine Kahadze, Amanda Liu, Chenglei Si, Yinheng Li, et al. 2024. <span>“The <span>Prompt Report</span>: <span>A Systematic Survey</span> of <span>Prompting Techniques</span>.”</span> June 6, 2024. <a href="http://arxiv.org/abs/2406.06608">http://arxiv.org/abs/2406.06608</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
   author = {Ellis, Andrew},
   title = {Using {AI} in {Education:} {Intermediate}},
   date = {2024-10-24},
