@@ -24,41 +24,14 @@ bibliography: ../bibliography.bib
 
 <br> <br>
 
-## KI Orientierungshilfe der BFH
-
-- [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
-
-- [KI-basierte Schreibtools in der Lehre – Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
-
-## Bildung 6.0
-The Bildung 6.0 project at the Bern University of Applied Sciences provides relevant and reliable information and recommendations on the proper use of AI-based tools (KBW) for students and teachers on an online platform.
-
-- [Projekt Bildung 6.0](https://www.bildung6.ch/)
-
-
-## Acedemic writing
-
-- [ChatGPT zitieren](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
-  
-
-## Legal questions
-
-- [Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/9734) [@saldenDidaktischeUndRechtliche2023]
-
-
 ## Prompt Engineering
 
 **Explore these prompt guides**
 
-{{< html file="https://learnprompting.org/docs/introduction" height="500px">}}
-
-
-
-
 
 
 :::{.callout-tip collapse="true"}
-### Learn prompting: An comprehensive (and free) guide.
+### Learn prompting: An comprehensive guide to prompt engineering.
 {{< bi link >}} [Learn prompting](https://learnprompting.org/docs/introduction)
 
 ```{=html}
@@ -76,3 +49,26 @@ The Bildung 6.0 project at the Bern University of Applied Sciences provides rele
 <iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>
 ``` 
 :::
+
+<br>
+
+## KI Orientierungshilfe der BFH
+
+- [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+
+- [KI-basierte Schreibtools in der Lehre – Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
+
+## Bildung 6.0
+The Bildung 6.0 project at the Bern University of Applied Sciences provides relevant and reliable information and recommendations on the proper use of AI-based tools (KBW) for students and teachers on an online platform.
+
+- [Projekt Bildung 6.0](https://www.bildung6.ch/)
+
+
+## Acedemic writing
+
+- [How to cite ChatGPT](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
+  
+
+## Legal questions
+
+- [Didaktische Und Rechtliche Perspektiven Auf KI-gestütztes Schreiben In Der Hochschulbildung](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/9734) [@saldenDidaktischeUndRechtliche2023]
