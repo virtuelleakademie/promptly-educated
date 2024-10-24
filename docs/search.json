@@ -784,13 +784,6 @@
     "text": "Detecting AI use\n\nCan be detected by the use of specific vocabulary and phrases: “delve”, “vibrant”, “embark”, “it’s important to note”, ” based on the data provided”.\nDetection tools are not very useful, and can be easily circumvented.\nAccording to Fleckenstein et al. (2024)\n\nGenerative AI can write papers that are undetectable.\nTeachers overestimate their detection abilities."
   },
   {
-    "objectID": "pages/pre-workshop.html",
-    "href": "pages/pre-workshop.html",
-    "title": "Pre-Workshop Instructions",
-    "section": "",
-    "text": "In this workshop, I recommend working with the following chatbots:\n\n\n\nChatbot\nDescription\nFeatures\n\n\n\n\nClaude\nConsidered by many to be using the best LLMs for a variety of tasks, such as coding and general-purpose writing.\nArtifacts (output in a single document), displays HTML\n\n\nChatGPT\nThe most popular chatbot, generally good for coding and writing. Its latest models are claimed to perform very well on reasoning tasks.\nWeb access, GPTs, Python code execution, Canvas\n\n\nHuggingChat\nA chatbot that allows you to use a variety of different open-source LLMs, such as those based on Llama. It’s free, but you need to create an account.\nWeb search, Assistants\n\n\n\n\nPreparation\nYou will need to create an account on each of these platforms. For Claude and ChatGPT, you will have to use your mobile number to verify your account.\n\n\nAdditional Resources\n\nOfficial Claude Documentation\nChatGPT Documentation\nHuggingFace Documentation\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "pages/tools.html",
     "href": "pages/tools.html",
     "title": "Promptly Educated //",
