@@ -37,7 +37,7 @@ website:
 
       - icon: person-workspace
         text: "Workshop"
-        file: pages/index.qmd
+        file: pages/workshop.qmd
 
       - icon: aspect-ratio ##book #file-slides
         text: "Slides" # {{< fa person-chalkboard >}}
