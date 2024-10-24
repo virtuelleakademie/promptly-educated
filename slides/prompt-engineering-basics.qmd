@@ -209,11 +209,13 @@ The patient has the following symptoms: [Insert symptoms
 here]
 :::
 
+
 ## Structure Input Using Markdown
 
 Technique: Organize input information in a structured format using [Markdown](https://www.markdownguide.org/).
 
 :::{.prompt-example}
+```
 Based on the patient's symptoms, create a triage assessment.
 
 # Patient Triage Information
@@ -229,6 +231,7 @@ Based on the patient's symptoms, create a triage assessment.
 1. Chest pain (severity: 8/10)
 2. Shortness of breath
 3. Left arm numbness
+```
 :::
 
 
@@ -262,6 +265,7 @@ ChatGPT to "use Python"
 
 :::{.prompt-example}
 [Insert query here…]
+
 Use Python.
 :::
 
