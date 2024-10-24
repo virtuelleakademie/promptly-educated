@@ -19,3 +19,16 @@ about:
 
 
 
+# Using AI in education: Intermediate
+
+[{{< bi link >}} [bfh.ch/de/weiterbildung/kurse/ki-in-der-lehre-intermediate/](https://www.bfh.ch/de/weiterbildung/kurse/ki-in-der-lehre-intermediate/)
+
+
+## Contents:
+- Using language models in teaching: Explore how language models can be effectively integrated into teaching and learning strategies.
+
+- Practical exercises and experiments with prompting LLMs to optimize the use of AI tools in teaching.
+
+- Discussion and exchange: Discuss challenges and best practices in using AI in teaching with other participants.
+
+- Develop your own use cases and scenarios for using AI in your teaching.
