@@ -17,6 +17,8 @@ bibliography: ../bibliography.bib
 format:
     html:
         toc: true
+        toc-depth: 4
+        toc-expand: true
         code-fold: true
         code-link: true
         # callout-appearance: simple
