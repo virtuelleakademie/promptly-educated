@@ -58,18 +58,8 @@ revealjs-plugins:
 - Output a distribution over all possible tokens in a sequence conditional on input. 
 - LLMs undergo three key stages of training:
 
-
-
-```{mermaid}
-flowchart LR
-    A["1. Pre-training<br/>Trained on large text<br/>corpora<br/>Task: next token prediction"] --> 
-    B["2. Instruction fine-tuning<br/>Trained on in-/output pairs<br/>Task: next token prediction"] -->
-    C["3. Reinforcement learning<br/>From human feedback<br/>Trained on ratings<br/>Aligns model outputs with<br/>human preferences"]
-
-    style A fill:#e5e9eb
-    style B fill:#e6eeff
-    style C fill:#f3e6ff
-```
+![](../assets/images/training.png)
+ 
 
 
 ## How do LLMs generate text?
