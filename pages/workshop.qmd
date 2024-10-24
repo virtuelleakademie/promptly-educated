@@ -74,7 +74,7 @@ The workshop is divided into several blocks, each focusing on different aspects 
 ## Opening Activity: The Wolf, Goat, and Cabbage Problem (10 min)
 
 :::{.try title="Hands-On Practice"}
-Enter the following prompt:
+Enter the following prompt (Claude, ChatGPT or HuggingChat):
 
 A farmer needs to transport a wolf, a goat, and a cabbage across a river using a small boat. The boat can carry only the farmer and one other item (either the wolf, the goat, or the cabbage) at a time. However, if left together without the farmer's supervision: The wolf will eat the goat, and the goat will eat the cabbage. The challenge is to figure out how the farmer can get all three items across the river safely.
 
@@ -116,6 +116,8 @@ A farmer needs to transport a wolf, a goat, and a cabbage across a river using a
 
 
 ## Progressive Revelation Activity
+
+When working with LLMs, you will often find that you don't get the output you want straight away. Instead, you will need to iteratively refine your prompting.
 
 :::{.individual title="Hands-On Practice"}
 ## Progressive Revelation Activity (15 min)
@@ -168,7 +170,7 @@ Prompt: You are a professional fiction writer. Write a short story (around 300 w
 :::{.individual title="Prompt Detective Exercise (15 min)"}
 <!-- ## Prompt Detective Exercise (15 min) -->
 1. Examine the outputs below and try to reconstruct the prompt that could have generated it.
-2. Test your prompt with the LLM and compare the output to the original.
+2. Test your prompts with Claude, ChatGPT or HuggingChat and compare the output to the original.
 :::
 
 ### Output 1:
@@ -200,7 +202,7 @@ Prompt: You are a professional fiction writer. Write a short story (around 300 w
 
 :::
 
-:::{.individual title="Prompt Detective Exercise (15 min)"}
+:::{.group title="Prompt Detective Exercise (15 min)"}
 ### Your Task:
 
 1. Discuss with your group:
@@ -233,7 +235,7 @@ Prompt: You are a professional fiction writer. Write a short story (around 300 w
 
 ### Error-First Learning Activity (20 min)
 
-Upload a research paper (ChatGPT or Claude)
+Upload a research paper (ChatGPT, Claude or HuggingChat) and ask the chatbot to summarize it.
 
 :::{.prompt-example title="Vague instructions" collapse="false"}
 Write a summary of the following research paper.
@@ -275,14 +277,17 @@ Potential improvements:
 :::
 
 
+For all of the scenarios above, attempt to improve the prompts and share your results with your neighbour.
+
+
 :::{.individual title="Individual Practice"}
 
-- Attempt fixes
+- Attempt to improve the prompts
 
 :::
 
-:::{.group title="Discuss fixes"}
-- Discuss fixes with your group
+:::{.pair title="Discuss fixes"}
+- Discuss fixes with your neighbour
 :::
 :::
 
@@ -350,7 +355,7 @@ The key is to carefully craft prompts and contexts that guide the LLM towards fa
 
 ## Anki Flashcard Project
 
-[Anki](https://apps.ankiweb.net/ is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
+[Anki](https://apps.ankiweb.net/) is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
 
 One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.
 
