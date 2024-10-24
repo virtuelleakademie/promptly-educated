@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/pages/index.html</loc>
-    <lastmod>2024-10-24T00:30:13.681Z</lastmod>
+    <lastmod>2024-10-24T00:39:46.804Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/slides/template.html</loc>
@@ -39,5 +39,9 @@
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-educated/pages/workshop-structure.html</loc>
     <lastmod>2024-10-23T15:44:38.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-educated/pages/workshop.html</loc>
+    <lastmod>2024-10-24T07:17:01.882Z</lastmod>
   </url>
 </urlset>
