@@ -139,7 +139,7 @@ An LLM is a type of generative AI model that is trained to predict the next word
 
 - An LLM learns to predict the next word in a sequence, given the previous words:
  $$ P(word | context) $$
-- Think of as "fancy autocomplete" (but very very powerful and sopisticated)
+- Think of as "fancy autocomplete" (but very very powerful and sophisticated)
 
 
 ![](../assets/images/ppl_full.gif){width=100%}
@@ -259,7 +259,7 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 A foundation model, or large language model (LLM):
 
 - is a type of machine learning model that is trained to predict the next word following the input (prompt).
-- is trained "simply" to predict the next word following a sequence of words. 
+- is trained to predict the next word following a sequence of words. 
 - does not necessarily produce human-like conversations.
 
 :::{.callout-note}
