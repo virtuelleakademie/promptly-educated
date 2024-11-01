@@ -207,7 +207,7 @@
     "href": "slides/llms-in-education.html#how-to-train-a-language-model",
     "title": "Large Langauge Models in Education",
     "section": "How to train a language model",
-    "text": "How to train a language model\n\nAn LLM learns to predict the next word in a sequence, given the previous words: \\[ P(word | context) \\]\nThink of as “fancy autocomplete” (but very very powerful and sopisticated)"
+    "text": "How to train a language model\n\nAn LLM learns to predict the next word in a sequence, given the previous words: \\[ P(word | context) \\]\nThink of as “fancy autocomplete” (but very very powerful and sophisticated)"
   },
   {
     "objectID": "slides/llms-in-education.html#how-does-an-llm-generate-text",
@@ -242,7 +242,7 @@
     "href": "slides/llms-in-education.html#foundation-models",
     "title": "Large Langauge Models in Education",
     "section": "Foundation models",
-    "text": "Foundation models\nA foundation model, or large language model (LLM):\n\nis a type of machine learning model that is trained to predict the next word following the input (prompt).\nis trained “simply” to predict the next word following a sequence of words.\ndoes not necessarily produce human-like conversations.\n\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? . .."
+    "text": "Foundation models\nA foundation model, or large language model (LLM):\n\nis a type of machine learning model that is trained to predict the next word following the input (prompt).\nis trained to predict the next word following a sequence of words.\ndoes not necessarily produce human-like conversations.\n\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? . .."
   },
   {
     "objectID": "slides/llms-in-education.html#training-process",
